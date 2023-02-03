@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item
+                android:drawable="@drawable/shape_button_15r" />
+            <item
+                android:drawable="@drawable/img_all_whitestar"
+                android:width="16dp"
+                android:height="16dp"
+                android:gravity="center|left"
+                android:left="10dp"/>
+        </layer-list>
+    </item>
+</selector>
