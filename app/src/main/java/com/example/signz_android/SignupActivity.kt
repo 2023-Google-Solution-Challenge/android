@@ -6,6 +6,6 @@ import android.os.Bundle
 class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup_worker)
+        setContentView(R.layout.activity_signup_owner)
     }
 }

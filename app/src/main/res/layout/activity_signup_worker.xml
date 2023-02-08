@@ -39,12 +39,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="31dp"
-                    android:text="owner" />
+                    android:text="owner"
+                    android:id="@+id/owner"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="worker" />
+                    android:text="worker"
+                    android:id="@+id/worker"/>
 
             </RadioGroup>
 

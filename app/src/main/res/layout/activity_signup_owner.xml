@@ -39,13 +39,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="31dp"
-                    android:id="@+id/owner"
                     android:text="owner" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/worker"
                     android:text="worker" />
 
             </RadioGroup>
@@ -291,28 +289,6 @@
                 android:layout_marginTop="4dp"
                 android:background="@drawable/box_stroke_gray_all"
                 android:hint="인증번호 입력"
-                android:textColorHint="@color/gray1"
-                android:textSize="14sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="16dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="29dp"
-                android:layout_marginTop="20dp"
-                android:gravity="right|bottom"
-                android:text="사업자등록번호"
-                android:textColor="@color/font"
-                android:textSize="12sp" />
-
-            <EditText
-                android:layout_width="327dp"
-                android:layout_height="44dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/box_stroke_gray_all"
-                android:hint="숫자만 입력"
                 android:textColorHint="@color/gray1"
                 android:textSize="14sp" />
 
