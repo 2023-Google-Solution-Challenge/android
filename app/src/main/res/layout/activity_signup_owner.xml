@@ -13,7 +13,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="97dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -21,7 +22,39 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="29dp"
-                android:layout_marginTop="97dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right|bottom"
+                android:text="사용자 유형"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="31dp"
+                    android:text="owner" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="worker" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="20dp"
                 android:gravity="right|bottom"
                 android:text="이메일"
                 android:textColor="@color/font"
@@ -271,7 +304,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="18dp"
                     android:text="[필수] 개인정보 수집, 이용 동의"
-                    android:textColor="@color/font"/>
+                    android:textColor="@color/font" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -285,6 +318,7 @@
                     android:textSize="12sp" />
 
             </LinearLayout>
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_signup"
                 android:layout_width="327dp"
@@ -297,7 +331,7 @@
                 android:text="Sign up"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
         </LinearLayout>
 
     </ScrollView>

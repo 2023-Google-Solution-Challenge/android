@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="13dp">
+
+    <ImageView
+        android:id="@+id/btn_viewcandi_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_all_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지원자 관리"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_viewcandi_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_viewcandi_back" />
+    <View
+        android:id="@+id/v1_viewcandi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewcandi_back"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/tv_candidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:text="지원자 정보"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v1_viewcandi"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="22dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/candi_info"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_stroke_gray_all"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_candidate"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="24dp">
+
+        <TextView
+            android:id="@+id/tv_candi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:text="홍길동"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_candi_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:text="2022.11.19"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tv_candi_name"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="230dp"/>
+
+        <TextView
+            android:id="@+id/tv_work_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:text="월요일, 수요일 | 10:00 ~ 14:00"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_candi_name"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_candi_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:text="신뢰도 50"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_work_day"
+            android:layout_marginTop="6dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_candi_title"
+        android:layout_width="327dp"
+        android:layout_height="36dp"
+        android:textColor="@color/gray1"
+        android:text="성실하고 책임감 있는 알바생입니다."
+        android:textSize="12sp"
+        android:background="@drawable/box_gray4_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/candi_info"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_candi_content"
+        android:layout_width="327dp"
+        android:layout_height="120dp"
+        android:textColor="@color/gray1"
+        android:text="카페알바 경력 많습니다 \n월 수 근무 모두 가능합니다."
+        android:textSize="12sp"
+        android:background="@drawable/box_gray4_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_candi_title"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_candi_wp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:text="경력"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_candi_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="22dp"/>
+
+    <View
+        android:id="@+id/v1_candi_wp"
+        android:layout_width="327dp"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_candi_wp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_candi_wp_n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:text="CGV 성신여대점"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v1_candi_wp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_candi_wp_d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:text="2020.11 ~ 2021.11"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_candi_wp_n1"
+        app:layout_constraintTop_toBottomOf="@id/v1_candi_wp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_candi_wp_n2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:text="공차 성신여대점"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_candi_wp_n1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_candi_wp_d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/font"
+        android:text="2020.11 ~ 2021.11"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_candi_wp_n2"
+        app:layout_constraintTop_toBottomOf="@id/tv_candi_wp_d1"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="372dp"
+        android:layout_height="42dp"
+        android:text="지원자 관리"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_candi_wp_d2"
+        android:layout_marginTop="260dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -123,7 +123,7 @@
             android:id="@+id/et_quit_reason"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="@drawable/box_stroke_all"
+            android:background="@drawable/box_stroke_gray_all"
             app:layout_constraintStart_toStartOf="parent"
             android:hint="사직 사유를 입력해주세요"
             android:textSize="14sp"
