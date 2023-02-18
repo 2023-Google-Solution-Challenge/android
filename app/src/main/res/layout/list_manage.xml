@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_managelist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box_stroke_all"
+    android:paddingVertical="18dp"
+    android:paddingHorizontal="15dp"
+    android:layout_marginBottom="24dp">
+    <TextView
+        android:id="@+id/tv_managelist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe peach"
+        android:textSize="16sp"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_managelist_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_managelist_title"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toEndOf="@id/tv_managelist_day"
+        app:layout_constraintTop_toTopOf="@id/tv_managelist_day"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/tv_managelist_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00~14:00"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toEndOf="@id/tv_managelist_day"
+        app:layout_constraintTop_toTopOf="@id/tv_managelist_day"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_managelist_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022.11.19 ~ 2023.5.19"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_managelist_day"
+        android:layout_marginTop="6dp"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_managelist_report"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:text="신고하기"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintTop_toBottomOf="@id/tv_managelist_period"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_managelist_quit"
+        android:layout_marginTop="11dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_managelist_quit"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:text="그만두기"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintTop_toBottomOf="@id/tv_managelist_period"
+        app:layout_constraintStart_toEndOf="@id/btn_managelist_report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="13dp"/>
+        
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

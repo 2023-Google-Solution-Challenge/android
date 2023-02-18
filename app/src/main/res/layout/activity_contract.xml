@@ -132,18 +132,31 @@
                 app:layout_constraintTop_toBottomOf="@id/et_contract_phone"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="24dp"/>
-            <EditText
+            <com.kyanogen.signatureview.SignatureView
+                xmlns:sign="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/et_contract_sign"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 android:background="@drawable/box_stroke_all"
-                android:textSize="12sp"
-                android:inputType="text"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_contract_sign"
                 android:layout_marginTop="6dp"
                 android:paddingHorizontal="15dp"
-                android:paddingVertical="12dp"/>
+                android:paddingVertical="12dp"
+                app:penColor="@android:color/black"
+                sign:enableSignature="true" />
+<!--            <EditText-->
+<!--                android:id="@+id/et_contract_sign"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:background="@drawable/box_stroke_all"-->
+<!--                android:textSize="12sp"-->
+<!--                android:inputType="text"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tv_contract_sign"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:paddingHorizontal="15dp"-->
+<!--                android:paddingVertical="12dp"/>-->
             <TextView
                 android:id="@+id/tv_contract_shop"
                 android:layout_width="wrap_content"
