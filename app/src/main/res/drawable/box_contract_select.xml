@@ -3,7 +3,7 @@
     <item>
         <layer-list>
             <item
-                android:drawable="@drawable/box_stroke_gray_all"/>
+                android:drawable="@drawable/box_stroke_all"/>
             <item
                 android:drawable="@drawable/img_all_down"
                 android:gravity="right"
