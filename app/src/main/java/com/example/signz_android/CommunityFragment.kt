@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.signz_android.WMain.ContractActivity
+import com.example.signz_android.WMain.WRecruitActivity
 import com.example.signz_android.databinding.FragmentCommunityBinding
 
 class CommunityFragment : Fragment() {
