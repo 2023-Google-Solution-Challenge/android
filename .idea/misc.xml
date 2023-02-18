@@ -3,8 +3,60 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/box_contract_date.xml" value="0.314" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/box_contract_select.xml" value="0.314" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/box_main_c_all.xml" value="0.16" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/box_stroke_all.xml" value="0.16" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/box_white_all.xml" value="0.1875" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/box_wrecruit_button.xml" value="0.189" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_all_back.xml" value="0.1565" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_menu_calendar.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_menu_community.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_menu_main.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_menu_mypage.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_mypage_settings.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/btn_pay_addaccount.xml" value="0.1875" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/img_all_blackstar.xml" value="0.2675" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/img_all_down.xml" value="0.2675" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/img_menu_calendar.xml" value="0.2005" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/img_menu_community_click.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/shape_button_15r.xml" value="0.2155" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/drawable/shape_circle.xml" value="0.1925" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_addaccount.xml" value="0.12552083333333333" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_addbankaccount.xml" value="0.33" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_contract.xml" value="0.2" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_findaccount.xml" value="0.22" />
         <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_main.xml" value="0.13229166666666667" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_notice.xml" value="0.25" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_pay.xml" value="0.19202898550724637" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_w_apply.xml" value="0.3578125" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_w_pay.xml" value="0.25" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_w_quit.xml" value="0.29393115942028986" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_w_recruit.xml" value="0.40300230946882215" />
         <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/activity_wmain.xml" value="0.14583333333333334" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/dialog_camera.xml" value="0.2708333333333333" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/dialog_findaccount.xml" value="0.25" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/dialog_holiday.xml" value="0.33" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/dialog_quit.xml" value="0.25" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/dialog_wpay.xml" value="0.254981884057971" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_calendar.xml" value="0.29393115942028986" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_community.xml" value="0.305982905982906" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_findid.xml" value="0.5" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_findpw.xml" value="0.33" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_apply.xml" value="0.20833333333333334" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_main.xml" value="0.18489583333333334" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_mainmanage.xml" value="0.17916666666666667" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_mainrecruit.xml" value="0.17916666666666667" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_manage.xml" value="0.22" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_recruit.xml" value="0.44567627494456763" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_w_recruitlist.xml" value="0.33" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/fragment_wmain.xml" value="0.23489583333333333" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/list_manage.xml" value="0.6149068322981367" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/list_recruit.xml" value="0.25" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/list_shop.xml" value="0.254981884057971" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/layout/style_spinner.xml" value="0.1796875" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/Signz_android/app/src/main/res/menu/menu_bottom.xml" value="0.23385416666666667" />
+        <entry key="..\:/android-sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.1796875" />
       </map>
     </option>
   </component>
