@@ -72,7 +72,6 @@
             android:background="@drawable/box_main_c_all"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_candi_score"
-            app:layout_constraintTop_toLeftOf="parent"
             android:layout_marginTop="11dp">
 
         </androidx.appcompat.widget.AppCompatButton>
