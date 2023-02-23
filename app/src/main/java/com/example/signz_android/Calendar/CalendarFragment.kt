@@ -19,9 +19,6 @@ class CalendarFragment : Fragment() {
     ): View? {
         binding = FragmentCalendarBinding.inflate(inflater, container, false)
 
-        binding.btnTest.setOnClickListener {
-            startActivity(Intent(activity, FindAccountActivity::class.java))
-        }
 
         return binding.root
     }
