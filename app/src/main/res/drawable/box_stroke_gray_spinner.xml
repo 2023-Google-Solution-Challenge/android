@@ -13,7 +13,7 @@
             </shape>
         </item>
         <item
-            android:drawable="@drawable/btn_calendar_bell"
+            android:drawable="@drawable/img_calendar_bell"
             android:gravity="center|end"
             android:width="15dp"
             android:height="15dp" />

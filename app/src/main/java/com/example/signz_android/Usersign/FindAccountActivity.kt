@@ -1,8 +1,7 @@
-package com.example.signz_android
+package com.example.signz_android.Usersign
 
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.databinding.ActivityFindaccountBinding
 import com.google.android.material.tabs.TabLayoutMediator
