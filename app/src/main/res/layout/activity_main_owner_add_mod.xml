@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="13dp">
+
+    <ImageView
+        android:id="@+id/btn_add_wop_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_all_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사업장 이름"
+        android:textSize="16sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_wop_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_wop_back" />
+    <View
+        android:id="@+id/v1_add_wop"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_wop_back"
+        android:layout_marginTop="13dp"/>
+
+
+    <TextView
+        android:id="@+id/tv1_add_wop"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right|bottom"
+        android:text="대표자명"
+       android:textColor="@color/font"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1_add_wop" />
+
+    <EditText
+        android:id="@+id/et_add_wop_username"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/box_stroke_gray_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1_add_wop"/>
+
+    <TextView
+        android:id="@+id/tv2_add_wop"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right|bottom"        android:text="상호명"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_wop_username"/>
+
+    <EditText
+        android:id="@+id/et_add_wop_pname"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/box_stroke_gray_all"
+        app:layout_constraintTop_toBottomOf="@+id/tv2_add_wop"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv3_add_wop"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right|bottom"
+        android:text="사업자 주소"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_wop_pname"/>
+
+    <EditText
+        android:id="@+id/et_add_wop_address"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/box_stroke_gray_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3_add_wop" />
+
+    <TextView
+        android:id="@+id/tv4_add_wop"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right|bottom"
+        android:text="사업자 등록번호"
+        android:textColor="@color/font"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_wop_address"/>
+
+    <EditText
+        android:id="@+id/et_add_wop_bregnum"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/box_stroke_gray_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4_add_wop"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_wop"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/box_main_c_all"
+        android:text="수정완료"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

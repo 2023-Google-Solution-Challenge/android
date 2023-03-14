@@ -20,14 +20,14 @@ class MainActivity : AppCompatActivity() {
     //네비게이션
     private fun initNavigation(){
         supportFragmentManager.beginTransaction()
-            .replace(R.id.frame_main, WMainFragment()).commitAllowingStateLoss()
+            .replace(R.id.frame_main, OMainFragment()).commitAllowingStateLoss()
         binding.bnvMain.itemIconTintList = null
 
         binding.bnvMain.setOnItemSelectedListener { item ->
             when(item.itemId){
                 R.id.fragment_main -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame_main, WMainFragment())
+                        .replace(R.id.frame_main, OMainFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }

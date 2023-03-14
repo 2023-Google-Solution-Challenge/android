@@ -20,11 +20,11 @@ class CommunityFragment : Fragment() {
 
         //test
         binding.communityTest.setOnClickListener {
-            startActivity(Intent(activity, WRecruitActivity::class.java))
+            //startActivity(Intent(activity, WRecruitActivity::class.java))
         }
         //test
         binding.communityTest2.setOnClickListener {
-            startActivity(Intent(activity, ContractActivity::class.java))
+            //startActivity(Intent(activity, ContractActivity::class.java))
         }
 
         return binding.root

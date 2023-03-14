@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="13dp">
+
+    <ImageView
+        android:id="@+id/btn_add_job_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_all_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="채용공고 수정하기"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_job_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_job_back" />
+    <View
+        android:id="@+id/v1_add_job"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_job_back"
+        android:layout_marginTop="13dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1_add_job"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:gravity="right|bottom"
+                android:text="근무지 설정"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinner_poj"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/box_stroke_gray_spinner"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="공고제목"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_add_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/box_stroke_gray_all"
+                android:textColorHint="@color/gray1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="급여"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:spinnerMode="dialog"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_spinner"
+                    />
+
+                <EditText
+                    android:layout_width="225dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/box_stroke_gray_all"
+                    android:hint="숫자만 입력"
+                    android:textColorHint="@color/gray1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="원"
+                    android:textColor="@color/font"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="주휴수당 지급 여부"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="180dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_l"
+                    android:text="예"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="180dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/box_stroke_gray_half_round_r"
+                    android:text="아니오"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="수습기간 여부"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="79dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_l"
+                    android:text="예"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="79dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_r"
+                    android:text="아니오"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_width="165dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/box_stroke_gray_all"
+                    android:hint="숫자만 입력"
+                    android:textColorHint="@color/gray1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="일"
+                    android:textColor="@color/font"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="근무 요일"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_l"
+                    android:text="월"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_x"
+                    android:text="화"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_x"
+                    android:text="수"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_x"
+                    android:text="목"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_x"
+                    android:text="금"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_x"
+                    android:text="토"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="47.42dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_r"
+                    android:text="일"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right|bottom"
+                android:text="근무 시간"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:spinnerMode="dialog"
+                    android:layout_width="72dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_spinner"
+                    />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/box_stroke_gray_all"
+                    android:textColorHint="@color/gray1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="시"
+                    android:textColor="@color/font"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="~"
+                    android:textColor="@color/font"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="72dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/box_stroke_gray_spinner"
+                    />
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/box_stroke_gray_all"
+                    android:textColorHint="@color/gray1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="4dp"
+                    android:text="시"
+                    android:textColor="@color/font"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:gravity="right|bottom"
+                android:text="근무 기간"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="157dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_all"
+                    android:textColorHint="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="52.73dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/box_stroke_gray_half_round_l"
+                    android:text="일"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="52.73dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_x"
+                    android:text="월"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="52.73dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/box_stroke_gray_half_round_r"
+                    android:text="개월"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray1"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginTop="20dp"
+                android:text="모집내용"
+                android:textColor="@color/font"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/box_stroke_gray_all"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/box_main_c_all"
+                android:text="수정완료"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

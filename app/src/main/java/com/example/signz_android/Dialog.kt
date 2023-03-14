@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Toast
 import com.example.signz_android.databinding.DialogFindaccountBinding
 import com.example.signz_android.databinding.DialogQuitBinding
+import com.example.signz_android.databinding.DialogSelectcandiBinding
 
 class DialogFindId (
     context: Context,
@@ -86,6 +87,36 @@ class DialogQuit (
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DialogQuitBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initViews()
+    }
+
+    private fun initViews() = with(binding) {
+        setCancelable(false)
+
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        tvDialogquitNo.setOnClickListener {
+            dismiss()
+        }
+        tvDialogquitOk.setOnClickListener {
+            okCallback("ok")
+            dismiss()
+
+        }
+    }
+}
+
+class DialogSelectCandi (
+    context: Context,
+    private val okCallback: (String) -> Unit,
+) : Dialog(context) {
+
+    private lateinit var binding: DialogSelectcandiBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DialogSelectcandiBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
     }

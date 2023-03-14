@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.signz_android">
 
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,12 +23,8 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -35,7 +32,22 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
+        <activity android:name=".OMainAddJobActivity"/>
+        <activity android:name=".OMainAddWopActivity"/>
+        <activity android:name=".OMainManageCandiActivity"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".OMypageContractActivity"/>
+        <activity android:name=".DeleteAccountActivity"/>
+        <activity android:name=".ChangePasswordActivity"/>
+        <activity android:name=".ModifyInfoActivity"/>
+        <activity android:name=".ChangePhoneNumActivity"/>
     </application>
 
 </manifest>

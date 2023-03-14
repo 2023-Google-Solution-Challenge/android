@@ -13,10 +13,11 @@
             </shape>
         </item>
         <item
-            android:drawable="@drawable/btn_calendar_bell"
+            android:drawable="@drawable/img_all_down"
             android:gravity="center|end"
-            android:width="15dp"
-            android:height="15dp" />
+            android:width="25dp"
+            android:height="30dp"
+            />
     </layer-list>
 </item>
 </selector>
