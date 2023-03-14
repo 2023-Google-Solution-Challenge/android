@@ -1,15 +1,11 @@
-package com.example.signz_android
+package com.example.signz_android.Usersign
 
-import android.app.AlertDialog
-import android.app.Dialog
-import android.app.ProgressDialog.show
-import android.content.DialogInterface
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.signz_android.DialogFindId
 import com.example.signz_android.databinding.FragmentFindidBinding
 
 class FindIdFragment : Fragment() {

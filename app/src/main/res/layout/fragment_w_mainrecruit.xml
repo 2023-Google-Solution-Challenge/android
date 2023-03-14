@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="24dp">
+    <TextView
+        android:id="@+id/tv_wmainrecruit_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돈암동 주변"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_wmainrecruit_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10개"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_wmainrecruit_address"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="2dp"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/img_all_location"
+        app:layout_constraintEnd_toStartOf="@id/tv_wmainrecruit_km"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="2dp"/>
+    <TextView
+        android:id="@+id/tv_wmainrecruit_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3km"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_wmainrecruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_wmainrecruit_address"
+        android:layout_marginTop="16dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_wmainrecruit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekbar_wmainrecruit"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/list_recruit"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

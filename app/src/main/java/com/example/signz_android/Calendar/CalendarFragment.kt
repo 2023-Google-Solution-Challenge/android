@@ -1,4 +1,4 @@
-package com.example.signz_android
+package com.example.signz_android.Calendar
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.signz_android.Usersign.FindAccountActivity
 import com.example.signz_android.databinding.FragmentCalendarBinding
 
 class CalendarFragment : Fragment() {
@@ -18,9 +19,6 @@ class CalendarFragment : Fragment() {
     ): View? {
         binding = FragmentCalendarBinding.inflate(inflater, container, false)
 
-        binding.btnTest.setOnClickListener {
-            startActivity(Intent(activity, FindAccountActivity::class.java))
-        }
 
         return binding.root
     }

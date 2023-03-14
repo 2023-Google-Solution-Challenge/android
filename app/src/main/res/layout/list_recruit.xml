@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_recruitlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box_stroke_all"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="15dp"
+    android:layout_marginBottom="24dp">
+    <TextView
+        android:id="@+id/tv_recruitlist_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe peach"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_recruitlist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe peach 직원 모집"
+        android:textSize="16sp"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recruitlist_shop"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:id="@+id/tv_recruitlist_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시급 9160원"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recruitlist_title"
+        android:layout_marginTop="6dp"/>
+    <ImageView
+        android:id="@+id/btn_recruitlist_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_all_right_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_recruitlist_title"/>
+
+    <ImageView
+        android:id="@+id/iv_recruitlist_star"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/img_all_blackstar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recruitlist_pay"
+        android:layout_marginTop="17dp"/>
+    <TextView
+        android:id="@+id/tv_recruitlist_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.1"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toEndOf="@id/iv_recruitlist_star"
+        app:layout_constraintTop_toTopOf="@id/iv_recruitlist_star"
+        app:layout_constraintBottom_toBottomOf="@id/iv_recruitlist_star"
+        android:layout_marginLeft="2dp"/>
+    <TextView
+        android:id="@+id/tv_recruitlist_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|  신뢰도"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toEndOf="@id/tv_recruitlist_rating"
+        app:layout_constraintTop_toTopOf="@id/tv_recruitlist_rating"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/tv_recruitlist_reliability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80"
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        app:layout_constraintStart_toEndOf="@id/tv_recruitlist_t"
+        app:layout_constraintTop_toTopOf="@id/tv_recruitlist_rating"
+        android:layout_marginLeft="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_recruitlist_edu1"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:text="교육\n이수"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_circle"
+        app:layout_constraintTop_toTopOf="@id/tv_recruitlist_reliability"
+        app:layout_constraintBottom_toBottomOf="@id/tv_recruitlist_reliability"
+        app:layout_constraintEnd_toStartOf="@+id/btn_recruitlist_edu2"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_recruitlist_edu2"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:text="교육\n이수"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_circle"
+        app:layout_constraintTop_toTopOf="@id/tv_recruitlist_reliability"
+        app:layout_constraintBottom_toBottomOf="@id/tv_recruitlist_reliability"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
