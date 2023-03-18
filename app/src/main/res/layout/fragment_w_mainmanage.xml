@@ -34,12 +34,7 @@ android:gravity="bottom">
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_wmanage_ongoing"
             android:layout_marginLeft="36dp"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="신고하기"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_wmange"
             android:layout_width="match_parent"
@@ -47,7 +42,7 @@ android:gravity="bottom">
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@id/tv_wmanage_ongoing"
             android:layout_marginTop="24dp"
-            tools:listitem="@layout/list_manage"/>
+            tools:listitem="@layout/item_manage"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.signz_android
+package com.example.signz_android.Usersign
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -13,6 +13,12 @@ class WQuitActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //
+        binding.btnQuitBack.setOnClickListener {
+            finish()
+        }
+        binding.btnQuitDone.setOnClickListener{
+            finish()
+        }
 
     }
 }
