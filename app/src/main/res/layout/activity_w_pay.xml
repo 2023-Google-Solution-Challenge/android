@@ -126,6 +126,7 @@
         android:background="@color/gray3"
         app:layout_constraintTop_toBottomOf="@+id/tv4_wpay"
         android:layout_marginTop="28dp"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_wpay"
         android:layout_width="match_parent"

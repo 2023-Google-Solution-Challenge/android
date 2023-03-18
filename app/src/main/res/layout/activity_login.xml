@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Usersign.LoginActivity">
     <ImageView
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_width="191dp"
         android:layout_height="71dp"
-        android:layout_marginLeft="92dp"
         android:layout_marginTop="136dp"
         android:src="@drawable/logo_black"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/img_logo"/>
 
@@ -77,7 +75,8 @@
             android:layout_marginTop="58dp"
             android:layout_marginLeft="24dp"
             android:textSize="16sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            />
 
     </LinearLayout>
     <LinearLayout
@@ -89,31 +88,36 @@
         app:layout_constraintTop_toBottomOf="@+id/signin_layout">
 
         <TextView
+            android:id="@+id/tv_signup_tv"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="76dp"
             android:text="아직도 회원이 아니신가요?"
             android:textColor="#999999"
             android:textSize="14sp"
-            android:gravity="right|bottom"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signin_layout"
+            app:layout_constraintEnd_toStartOf="@id/tv_signup"
+            android:layout_marginTop="61dp"/>
         <TextView
             android:id="@+id/tv_signup"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
             android:layout_marginLeft="10dp"
             android:text="회원가입"
             android:textColor="#6B6B6B"
             android:textSize="14sp"
-            android:gravity="right|bottom"/>
+            app:layout_constraintStart_toEndOf="@id/tv_signup_tv"
+            app:layout_constraintEnd_toStartOf="@id/tv_signup_iv"
+            app:layout_constraintTop_toTopOf="@id/tv_signup_tv"/>
         <ImageView
+            android:id="@+id/tv_signup_iv"
             android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:src="@drawable/btn_all_right_15"
-            app:tint="#6B6B6B" />
+            app:tint="#6B6B6B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_signup"
+            app:layout_constraintTop_toTopOf="@id/tv_signup"/>
 
     </LinearLayout>
 
