@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.signz_android.databinding.ItemManageBinding
 import com.example.signz_android.databinding.ItemRecruitBinding
 
-class WMainRecruitRVAdapter(val context: Context, val result : List<WMainRecruitResult>) : RecyclerView.Adapter<WMainRecruitRVAdapter.ViewHolder>() {
+class WMainRecruitRVAdapter(val context: Context, val recruitList: ArrayList<WMainRecruitResult>) : RecyclerView.Adapter<WMainRecruitRVAdapter.ViewHolder>() {
 
     interface RecruitClickListener{
         fun onItemClick(recruit: WMainRecruitResult)
@@ -28,13 +28,13 @@ class WMainRecruitRVAdapter(val context: Context, val result : List<WMainRecruit
     }
 
     override fun onBindViewHolder(holder: WMainRecruitRVAdapter.ViewHolder, position: Int) {
-        holder.bind(result[position])
+        holder.bind(recruitList[position])
         holder.binding.clRecruitlist.setOnClickListener {
-            recruitClickListener.onItemClick((result[position]))
+            recruitClickListener.onItemClick((recruitList[position]))
         }
     }
 
-    override fun getItemCount(): Int = result.size
+    override fun getItemCount(): Int = recruitList.size
 
     inner class ViewHolder(val binding: ItemRecruitBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -48,7 +48,7 @@ class WMainRecruitRVAdapter(val context: Context, val result : List<WMainRecruit
     }
 }
 
-class WMainManageRVAdapter(val context: Context, val result : List<WMainManageResult>) : RecyclerView.Adapter<WMainManageRVAdapter.ViewHolder>() {
+class WMainManageRVAdapter(val context: Context, val result : ArrayList<WMainManageResult>) : RecyclerView.Adapter<WMainManageRVAdapter.ViewHolder>() {
 
     interface ManageClickListener{
         fun onItemClick(recruit: WMainManageResult)

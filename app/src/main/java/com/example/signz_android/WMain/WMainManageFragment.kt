@@ -12,6 +12,7 @@ import com.example.signz_android.databinding.FragmentWMainmanageBinding
 
 class WMainManageFragment : Fragment() {
     private lateinit var binding: FragmentWMainmanageBinding
+    private var wMainManageList = ArrayList<WMainManageResult>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,13 +21,18 @@ class WMainManageFragment : Fragment() {
     ): View? {
         binding = FragmentWMainmanageBinding.inflate(inflater, container, false)
 
+        initRecyclerView()
+
         //근무완료를 누르면 근무완료 api에서 데이터 받기
 
         return binding.root
     }
 
-    private fun initRecyclerView(result: List<WMainManageResult>){
-        val wMainManageRVAdapter = WMainManageRVAdapter(requireContext(), result)
+    private fun initRecyclerView(){
+        wMainManageList.apply {
+            add(WMainManageResult("Cafe peach", "월요일,수요일", "10:00 ~ 14:00", "2022.11.19 ~ 2023.5.19"))
+        }
+        val wMainManageRVAdapter = WMainManageRVAdapter(requireContext(), wMainManageList)
         binding.rvWmange.adapter = wMainManageRVAdapter
         binding.rvWmange.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         wMainManageRVAdapter.setManageClickListener(object : WMainManageRVAdapter.ManageClickListener {

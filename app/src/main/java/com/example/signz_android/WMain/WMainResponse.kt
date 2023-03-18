@@ -12,7 +12,7 @@ data class WMainRecruitResult(
     @SerializedName(value = "shop") val shop: String,
     @SerializedName(value = "title") val title: String,
     @SerializedName(value = "pay") val pay: String,
-    @SerializedName(value = "rating") val rating: Int,
+    @SerializedName(value = "rating") val rating: Double,
     @SerializedName(value = "reliability") val reliability: Int,
 )
 
