@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="My page"
         android:textSize="16sp"
+        android:textStyle="bold"
         android:textColor="@color/font"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,22 +30,23 @@
         android:id="@+id/img_mypage_profile"
         android:layout_width="66dp"
         android:layout_height="66dp"
-        android:background="@drawable/shape_circle"
+        android:background="@drawable/shape_circle_gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_mypage"
         android:layout_marginTop="24dp"/>
 
     <TextView
-    android:id="@+id/tv_mypage_name"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="홍길동"
-    android:textSize="16sp"
-    android:textColor="@color/font"
-    app:layout_constraintTop_toBottomOf="@+id/tv_mypage"
-    android:layout_marginTop="24dp"
-    app:layout_constraintLeft_toRightOf="@+id/img_mypage_profile"
-    android:layout_marginLeft="20dp"/>
+        android:id="@+id/tv_mypage_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홍길동"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/font"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mypage"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/img_mypage_profile"
+        android:layout_marginLeft="20dp"/>
 
     <TextView
         android:id="@+id/tv_mypage_address"
@@ -300,7 +302,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/tv_confi_des"
+        android:id="@+id/tv_confi2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confidence level?"
@@ -310,5 +312,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_mypage_confidence"/>
 
+    <TextView
+        android:id="@+id/tv_confi_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reliability"
+        android:textSize="12sp"
+        android:textColor="@color/gray1"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confi2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

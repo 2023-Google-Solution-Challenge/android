@@ -1,17 +1,21 @@
-package com.example.signz_android
+package com.example.signz_android.OMain
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.signz_android.databinding.ActivityMainBinding
+import com.example.signz_android.Calendar.CalendarFragment
+import com.example.signz_android.CommunityFragment
+import com.example.signz_android.Mypage.MyPageFragment
+import com.example.signz_android.R
+import com.example.signz_android.databinding.ActivityWMainBinding
 
 class OMainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityWMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_w_main)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityWMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         initNavigation()

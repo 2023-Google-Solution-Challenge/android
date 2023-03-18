@@ -1,7 +1,8 @@
-package com.example.signz_android
+package com.example.signz_android.Mypage
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.signz_android.OViewPagerAdapter
 import com.example.signz_android.databinding.ActivityMypageOContractBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

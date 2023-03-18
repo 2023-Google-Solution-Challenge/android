@@ -1,15 +1,17 @@
-package com.example.signz_android
+package com.example.signz_android.Usersign
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.example.signz_android.PolicyResponse
+import com.example.signz_android.RetrofitClient
+import com.example.signz_android.RetrofitInterface
+import com.example.signz_android.SignUpRequestBody
 import com.example.signz_android.databinding.ActivitySignupWorkerBinding
 import retrofit2.*
 import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 
 class SignupActivity : AppCompatActivity() {

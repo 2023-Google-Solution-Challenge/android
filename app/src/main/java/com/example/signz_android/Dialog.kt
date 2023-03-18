@@ -6,7 +6,10 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
+import android.view.Window
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.signz_android.databinding.DialogContractBinding
 import com.example.signz_android.databinding.DialogFindaccountBinding
 import com.example.signz_android.databinding.DialogQuitBinding
 import com.example.signz_android.databinding.DialogSelectcandiBinding
@@ -107,16 +110,42 @@ class DialogQuit (
     }
 }
 
-class DialogSelectCandi (
+class DialogSelectCandi (private val context : AppCompatActivity) {
+
+    private lateinit var binding: DialogSelectcandiBinding
+    private val dlg = Dialog(context)   //부모 액티비티의 context 가 들어감
+
+    fun show() {
+        binding = DialogSelectcandiBinding.inflate(context.layoutInflater)
+
+        dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
+        dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
+        dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+
+        //ok 버튼 동작
+        binding.tvDialogquitOk.setOnClickListener {
+            dlg.dismiss()
+        }
+
+        //cancel 버튼 동작
+        binding.tvDialogquitNo.setOnClickListener {
+            dlg.dismiss()
+        }
+
+        dlg.show()
+    }
+}
+
+class DialogContract (
     context: Context,
     private val okCallback: (String) -> Unit,
 ) : Dialog(context) {
 
-    private lateinit var binding: DialogSelectcandiBinding
+    private lateinit var binding: DialogContractBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DialogSelectcandiBinding.inflate(layoutInflater)
+        binding = DialogContractBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
     }

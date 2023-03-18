@@ -1,9 +1,10 @@
 package com.example.signz_android
 
+
 data class JobpostData (
-    var pob_name: String = "ㅎㅇ",
-    var title: String = "ㅎㅇㅎㅇ",
-    var date: String = "ㅂ2"
+    var pob_name: String,
+    var title: String,
+    var date: String
 ){
     fun getData1(): String?{
         return pob_name
@@ -23,4 +24,5 @@ data class JobpostData (
     fun setData4(date: String){
         this.date = date
     }
+
 }

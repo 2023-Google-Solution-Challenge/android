@@ -1,4 +1,4 @@
-package com.example.signz_android
+package com.example.signz_android.OMain
 
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.example.signz_android.OViewPagerAdapter
 import com.example.signz_android.databinding.FragmentOMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

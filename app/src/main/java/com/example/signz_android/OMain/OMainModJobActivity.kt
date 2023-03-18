@@ -1,4 +1,4 @@
-package com.example.signz_android
+package com.example.signz_android.OMain
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

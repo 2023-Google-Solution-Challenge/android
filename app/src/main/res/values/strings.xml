@@ -20,4 +20,10 @@
     <string name="quit">계약 종료 최소 1달 전까지 사직 통보가 가능하며, 명시된 기간\n전에 사직할 경우 사유에 따라 신뢰도가 감점됩니다.\n정말 근무를 종료하시겠습니까?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="reliability"> A fair assessment of the employer-worker relationship of trust and "reliability" should take into account both the employer\'s and worker\'s measures of activity.
+        \n From the employer\'s perspective, "reliability" reflects the worker\'s ability to perform their duties competently and consistently, and to follow established policies and procedures. This includes factors such as meeting deadlines, completing tasks accurately, and being reliable and punctual in their work. Employers may also evaluate workers based on their ability to collaborate and communicate effectively with colleagues and clients, and to contribute positively to the overall success of the organization.
+        \n From the worker\'s perspective, "reliability" reflects the employer\'s ability to provide a safe and supportive work environment, to offer fair compensation and benefits, and to provide opportunities for growth and development. Workers may also evaluate their employers based on their ability to communicate openly and transparently, to listen to and address concerns and feedback, and to recognize and reward their contributions to the organization.</string>
+
+
 </resources>

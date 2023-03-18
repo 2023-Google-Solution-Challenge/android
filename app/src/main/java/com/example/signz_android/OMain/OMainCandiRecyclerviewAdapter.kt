@@ -1,9 +1,9 @@
-package com.example.signz_android
+package com.example.signz_android.OMain
 
-import android.app.Dialog
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.example.signz_android.CandiData
 import com.example.signz_android.databinding.MainOwnerCandiListBinding
 
 
@@ -33,7 +33,7 @@ class Holder(val binding: MainOwnerCandiListBinding) : RecyclerView.ViewHolder(b
     init {
         binding.btnCandiDecide.setOnClickListener {
             //다이얼로그 후 확정
-            candiActivity?.dialog()
+            candiActivity?.dialogSelectCandi()
         }
 
         binding.btnViewCandi.setOnClickListener {

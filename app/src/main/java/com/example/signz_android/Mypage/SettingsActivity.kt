@@ -1,4 +1,4 @@
-package com.example.signz_android
+package com.example.signz_android.Mypage
 
 import android.content.Intent
 import android.os.Bundle

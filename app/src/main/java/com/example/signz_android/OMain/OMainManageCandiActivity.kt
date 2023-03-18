@@ -1,10 +1,11 @@
-package com.example.signz_android
+package com.example.signz_android.OMain
 
-import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.signz_android.CandiData
+import com.example.signz_android.DialogSelectCandi
 import com.example.signz_android.databinding.ActivityOManageBinding
 import com.example.signz_android.databinding.ActivityOViewcandiBinding
 
@@ -41,11 +42,12 @@ class OMainManageCandiActivity : AppCompatActivity() {
     }
 
     fun startActivityViewCandi(){
-        startActivity(Intent(this@OMainManageCandiActivity, ActivityOViewcandiBinding::class.java))
+        startActivity(Intent(this, OMainViewCandi::class.java))
     }
 
-    fun dialog(){
-        //val dialog = DialogSelectCandi(this@OMainManageCandiActivity)
+    fun dialogSelectCandi(){
+        val dialog = DialogSelectCandi(this)
+        dialog.show()
     }
 }
 

@@ -22,7 +22,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".SignupActivity"
+            android:name=".Usersign.SignupActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -30,7 +30,7 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".Usersign.LoginActivity"
             android:exported="false">
         </activity>
 
@@ -45,15 +45,15 @@
         </activity>
 
 
-        <activity android:name=".OMainAddJobActivity"/>
-        <activity android:name=".OMainAddWopActivity"/>
-        <activity android:name=".OMainManageCandiActivity"/>
-        <activity android:name=".SettingsActivity"/>
-        <activity android:name=".OMypageContractActivity"/>
-        <activity android:name=".DeleteAccountActivity"/>
-        <activity android:name=".ChangePasswordActivity"/>
-        <activity android:name=".ModifyInfoActivity"/>
-        <activity android:name=".ChangePhoneNumActivity"/>
+        <activity android:name=".OMain.OMainAddJobActivity"/>
+        <activity android:name=".OMain.OMainAddWopActivity"/>
+        <activity android:name=".OMain.OMainManageCandiActivity"/>
+        <activity android:name=".Mypage.SettingsActivity"/>
+        <activity android:name=".Mypage.OMypageContractActivity"/>
+        <activity android:name=".Mypage.DeleteAccountActivity"/>
+        <activity android:name=".Mypage.ChangePasswordActivity"/>
+        <activity android:name=".Mypage.ModifyInfoActivity"/>
+        <activity android:name=".Mypage.ChangePhoneNumActivity"/>
     </application>
 
 </manifest>

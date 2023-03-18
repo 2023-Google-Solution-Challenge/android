@@ -23,6 +23,7 @@
             android:textColor="@color/font"
             android:text="홍길동"
             android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 

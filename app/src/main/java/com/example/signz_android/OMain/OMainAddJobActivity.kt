@@ -1,19 +1,25 @@
-package com.example.signz_android
+package com.example.signz_android.OMain
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.signz_android.JobpostData
+import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityOwnerMainJopBinding
+import java.time.LocalDate
 import java.time.LocalTime
 
 class OMainAddJobActivity : AppCompatActivity() {
-    var DB = null
+
+    private val jobList = ArrayList<JobpostData>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityOwnerMainJopBinding.inflate(layoutInflater);
         setContentView(binding.root)
+
+        jobList.apply { add(JobpostData("Cafe peach", "Cafe peach needs new barista", "2023-03-16")) }
 
         val spinner_poj = binding.spinnerPoj
         val spinner_money_type = binding.spMoney
@@ -107,11 +113,11 @@ class OMainAddJobActivity : AppCompatActivity() {
         }
 
 
-
         binding.btnAddJobPost.setOnClickListener {
             //DB에 저장
             //리사이클러뷰 추가
             //finish
+            val poj = binding.spinnerPoj.selectedItem.toString()
             val title = binding.etAddJobTitle.text.toString()
             val contents = binding.etPostContent.text.toString()
             val paytype = spinner_money_type.selectedItem.toString()
@@ -127,12 +133,16 @@ class OMainAddJobActivity : AppCompatActivity() {
             var period_type: Int? = null
             var is_probation: Int? = null
             val pay_type_int = 0
+            val onlyDate: String = LocalDate.now().toString()
 
-            if (title == "" || contents == "" || paytype == "" || pay == "" || prob_period == "" || work_period == "" || st_string == "" || ed_string == "") Toast.makeText(
-                this@OMainAddJobActivity,
-                "모든 정보를 빠짐없이 입력해주세요",
-                Toast.LENGTH_SHORT
-            ).show() else {
+            if (title == "" || contents == "" || paytype == "" || pay == "" || prob_period == "" || work_period == "" || st_string == "" || ed_string == "") //binding.btnMday.isSelected || binding.btnTuday.isSelected -> work_day =
+            {
+                Toast.makeText(
+                    this@OMainAddJobActivity,
+                    "모든 정보를 빠짐없이 입력해주세요",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
                 if (binding.btnHoliPayY.isSelected) {
                     is_weekly_holiday_paid = 1
                 } else if (binding.btnHoliPayN.isSelected) {
@@ -192,14 +202,10 @@ class OMainAddJobActivity : AppCompatActivity() {
                     ).show()
                 }
 
-              //  if (period_type != null && is_weekly_holiday_paid != null && work_day!= null && is_probation != null){
-                    //val insert = DB!!.insertData(title, contents, pay_type_int, pay, is_weekly_holiday_paid, is_probation, prob_period, period_type, work_period, work_day, start_time, end_time)
-                    //if (insert == true) {
-                        //val intent = Intent(applicationContext, OMainActivity::class.java)
-                        //startActivity(intent)
-                 //   }
-              //  }
-
+              if (period_type != null && is_weekly_holiday_paid != null && work_day!= null && is_probation != null){
+                  jobList.add(JobpostData(poj, title, onlyDate))
+                  finish()
+                }
             }
         }
     }

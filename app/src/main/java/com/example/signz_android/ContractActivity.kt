@@ -1,8 +1,6 @@
-package com.example.signz_android.WMain
+package com.example.signz_android
 
 import android.Manifest
-import android.Manifest.permission.READ_EXTERNAL_STORAGE
-import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
@@ -19,7 +17,6 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityContractBinding
 import java.io.File
 import java.io.FileOutputStream

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.signz_android.Calendar.CalendarFragment
 import com.example.signz_android.CommunityFragment
-import com.example.signz_android.MyPageFragment
+import com.example.signz_android.Mypage.MyPageFragment
 import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityWMainBinding
 
@@ -24,14 +24,14 @@ class WMainActivity : AppCompatActivity() {
     //네비게이션
     private fun initNavigation(){
         supportFragmentManager.beginTransaction()
-            .replace(R.id.frame_main, OMainFragment()).commitAllowingStateLoss()
+            .replace(R.id.frame_main, WMainFragment()).commitAllowingStateLoss()
         binding.bnvMain.itemIconTintList = null
 
         binding.bnvMain.setOnItemSelectedListener { item ->
             when(item.itemId){
                 R.id.fragment_main -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame_main, OMainFragment())
+                        .replace(R.id.frame_main, WMainFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }

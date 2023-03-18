@@ -1,11 +1,10 @@
-package com.example.signz_android
+package com.example.signz_android.Usersign
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.signz_android.databinding.ActivityLoginBinding
-import com.example.signz_android.databinding.ActivitySignupWorkerBinding
 
 class LoginActivity : AppCompatActivity() {
     var DB = null
