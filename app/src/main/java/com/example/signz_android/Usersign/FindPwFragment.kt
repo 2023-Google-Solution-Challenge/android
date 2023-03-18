@@ -1,5 +1,6 @@
 package com.example.signz_android.Usersign
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -39,7 +40,7 @@ class FindPwFragment : Fragment() {
 //            builder.create().show()
             DialogFindPw(requireContext()){
                 if(it == "login"){
-//                    startActivity(Intent(activity, LoginActivity::class.java))
+                    startActivity(Intent(activity, LoginActivity::class.java))
                 }
             }.show()
 

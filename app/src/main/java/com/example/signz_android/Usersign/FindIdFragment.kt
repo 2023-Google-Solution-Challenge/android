@@ -35,7 +35,7 @@ class FindIdFragment : Fragment() {
         binding.btnFindidConfirm.setOnClickListener{
             DialogFindId(requireContext()){
                 if(it == "login"){
-//                    startActivity(Intent(activity, LoginActivity::class.java))
+                    startActivity(Intent(activity, LoginActivity::class.java))
                 }
             }.show()
         }
