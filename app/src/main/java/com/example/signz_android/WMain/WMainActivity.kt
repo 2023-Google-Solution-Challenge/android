@@ -2,7 +2,8 @@ package com.example.signz_android.WMain
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.signz_android.Calendar.CalendarFragment
+import com.example.signz_android.Calendar.OCalendarFragment
+import com.example.signz_android.Calendar.WCalendarFragment
 import com.example.signz_android.CommunityFragment
 import com.example.signz_android.Mypage.MyPageFragment
 import com.example.signz_android.R
@@ -38,7 +39,7 @@ class WMainActivity : AppCompatActivity() {
 
                 R.id.fragment_calendar -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame_main, CalendarFragment())
+                        .replace(R.id.frame_main, WCalendarFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }

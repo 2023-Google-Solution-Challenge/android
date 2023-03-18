@@ -6,18 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.signz_android.Usersign.FindAccountActivity
-import com.example.signz_android.databinding.FragmentCalendarBinding
+import com.example.signz_android.databinding.FragmentWPaylistBinding
 
-class CalendarFragment : Fragment() {
-    private lateinit var binding: FragmentCalendarBinding
+class WPayListFragment: Fragment() {
+    private lateinit var binding: FragmentWPaylistBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentCalendarBinding.inflate(inflater, container, false)
+        binding = FragmentWPaylistBinding.inflate(inflater, container, false)
 
 
         return binding.root

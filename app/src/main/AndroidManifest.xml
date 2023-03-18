@@ -28,22 +28,31 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
+        
         <activity
             android:name=".Usersign.LoginActivity"
-            android:exported="false">
-        </activity>
-
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        
+        <activity
+            android:name=".WMain.WMainActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Usersign.FindAccountActivity" />
 
+        <activity android:name=".WMain.WApplyActivity"/>
+        <activity android:name=".WMain.WRecruitActivity"/>
+        <activity android:name=".WMain.WQuitActivity"/>
+        <activity android:name=".WMain.ContractActivity"/>
+        <activity android:name=".Calendar.WPayActivity"/>
 
         <activity android:name=".OMain.OMainAddJobActivity"/>
         <activity android:name=".OMain.OMainAddWopActivity"/>

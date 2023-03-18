@@ -1,5 +1,10 @@
 package com.example.signz_android.Usersign
 
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +15,8 @@ import com.example.signz_android.databinding.FragmentFindidBinding
 
 class FindIdFragment : Fragment() {
     private lateinit var binding: FragmentFindidBinding
+
+    //private lateinit var receiver: BroadcastReceiver
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,7 +35,7 @@ class FindIdFragment : Fragment() {
         binding.btnFindidConfirm.setOnClickListener{
             DialogFindId(requireContext()){
                 if(it == "login"){
-//                    startActivity(Intent(activity, LoginActivity::class.java))
+                    startActivity(Intent(activity, LoginActivity::class.java))
                 }
             }.show()
         }
@@ -41,4 +48,5 @@ class FindIdFragment : Fragment() {
         binding.tvFindidCerti.visibility = View.GONE
         binding.etFindidCerti.visibility = View.GONE
     }
+
 }

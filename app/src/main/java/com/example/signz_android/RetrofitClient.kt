@@ -6,6 +6,8 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
+const val BASE_URL = "https://mm/"
+
 object RetrofitClient {
     private var instance: Retrofit? = null
     private const val CONNECT_TIMEOUT_SEC = 20000L
@@ -24,11 +26,10 @@ object RetrofitClient {
                 .build()
 
             instance = Retrofit.Builder()
-                .baseUrl("http://localhost:8080/users")
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client) // Retrofit 객체에 OkHttpClient 적용
                 .build()
-
         }
         return instance!!
     }

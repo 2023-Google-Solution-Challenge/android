@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.signz_android.WMain.WMainActivity
 import com.example.signz_android.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -13,8 +14,13 @@ class LoginActivity : AppCompatActivity() {
         val binding = ActivityLoginBinding.inflate(layoutInflater);
         setContentView(binding.root)
 
+        binding.imgLogo.setOnClickListener {
+            startActivity(Intent(this, WMainActivity::class.java))
+        }
+
+
         binding.passIdFind.setOnClickListener {
-            val findIntent = Intent(this@LoginActivity, FindAccountActivity::class.java)
+            val findIntent = Intent(this, FindAccountActivity::class.java)
             startActivity(findIntent)
         }
         binding.tvSignup.setOnClickListener {

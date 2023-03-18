@@ -295,15 +295,29 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="24dp"/>
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_contract_break"
-                android:layout_width="match_parent"
+                android:id="@+id/btn_contract_break_yes"
+                android:layout_width="0dp"
                 android:layout_height="36dp"
+                android:backgroundTint="@color/main"
                 android:text="휴게시간 있음"
                 android:textSize="12sp"
                 android:textColor="@color/white"
-                android:background="@drawable/box_main_c_all"
+                android:background="@drawable/box_stroke_gray_half_round_l"
                 app:layout_constraintTop_toBottomOf="@id/tv_contract_break"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_contract_break_no"
                 android:layout_marginTop="6dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_contract_break_no"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:text="휴게시간 없음"
+                android:textSize="12sp"
+                android:textColor="@color/gray1"
+                android:background="@drawable/box_stroke_gray_half_round_r"
+                app:layout_constraintTop_toTopOf="@id/btn_contract_break_yes"
+                app:layout_constraintStart_toEndOf="@id/btn_contract_break_yes"
+                app:layout_constraintEnd_toEndOf="parent"/>
             <TextView
                 android:id="@+id/et_contract_sbreak"
                 android:layout_width="0dp"
@@ -313,7 +327,7 @@
                 android:hint="시작시간"
                 android:textColor="@color/font"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_contract_break"
+                app:layout_constraintTop_toBottomOf="@id/btn_contract_break_yes"
                 app:layout_constraintEnd_toStartOf="@+id/et_contract_ebreak"
                 app:layout_constraintHorizontal_chainStyle="spread_inside"
                 android:layout_marginTop="9dp"
@@ -423,15 +437,40 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="24dp"/>
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_contract_payday"
-                android:layout_width="match_parent"
+                android:id="@+id/btn_contract_payday_month"
+                android:layout_width="0dp"
                 android:layout_height="36dp"
+                android:backgroundTint="@color/main"
                 android:text="매월"
                 android:textSize="12sp"
                 android:textColor="@color/white"
-                android:background="@drawable/box_main_c_all"
+                android:background="@drawable/box_stroke_gray_half_round_l"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_contract_payday_week"
                 app:layout_constraintTop_toBottomOf="@id/tv_contract_payday"
                 android:layout_marginTop="6dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_contract_payday_week"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:text="매주"
+                android:textSize="12sp"
+                android:textColor="@color/gray1"
+                android:background="@drawable/box_stroke_gray_half_round_x"
+                app:layout_constraintStart_toEndOf="@id/btn_contract_payday_month"
+                app:layout_constraintEnd_toStartOf="@id/btn_contract_payday_day"
+                app:layout_constraintTop_toTopOf="@id/btn_contract_payday_month"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_contract_payday_day"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:text="매일"
+                android:textSize="12sp"
+                android:textColor="@color/gray1"
+                android:background="@drawable/box_stroke_gray_half_round_r"
+                app:layout_constraintStart_toEndOf="@id/btn_contract_payday_week"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_contract_payday_month"/>
             <EditText
                 android:id="@+id/et_contract_payday"
                 android:layout_width="match_parent"
@@ -440,7 +479,7 @@
                 android:textSize="12sp"
                 android:hint="매월"
                 android:textColor="@color/font"
-                app:layout_constraintTop_toBottomOf="@id/btn_contract_payday"
+                app:layout_constraintTop_toBottomOf="@id/btn_contract_payday_month"
                 android:layout_marginTop="9dp"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="12dp"/>
