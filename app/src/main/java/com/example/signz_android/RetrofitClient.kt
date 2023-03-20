@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-const val BASE_URL = "https://mm/"
+const val BASE_URL = "http://34.22.73.190:8080/"
 
 object RetrofitClient {
     private var instance: Retrofit? = null

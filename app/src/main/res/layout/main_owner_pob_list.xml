@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="26dp">
+    android:layout_marginTop="24dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/pob1"
-        android:layout_width="327dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
+        android:layout_marginHorizontal="24dp"
         android:background="@drawable/box_stroke_gray_all"
         android:paddingHorizontal="15dp"
         android:paddingVertical="10dp"
@@ -24,6 +24,7 @@
             android:text="Cafe peach"
             android:textColor="@color/font"
             android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,8 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="244dp"
             android:src="@drawable/btn_all_right_2"
-            app:layout_constraintLeft_toRightOf="@+id/tv_pob_num"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_pob_name" />
 
         <TextView
@@ -53,42 +53,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
-            android:text="2022.11.14 등록"
+            android:text="2022.11.14"
             android:textColor="@color/font"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_pob_num" />
 
+        <TextView
+            android:id="@+id/tv_pob_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="등록"
+            android:textColor="@color/font"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/tv_pob_date"
+            android:layout_marginStart="3dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_pob_num" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_del_pob"
-            android:layout_width="142dp"
-            android:layout_height="34dp"
-            android:layout_marginTop="19dp"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
             android:background="@drawable/box_main_c_all"
             android:text="삭제하기"
             android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintEnd_toStartOf="@+id/btn_ad_worker"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_pob_date">
+            app:layout_constraintTop_toBottomOf="@id/tv_pob_date"
+            android:layout_marginTop="11dp">
 
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_ad_worker"
-            android:layout_width="142dp"
-            android:layout_height="34dp"
+            android:layout_width="160dp"
+            android:layout_height="37dp"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="57dp"
             android:background="@drawable/box_main_c_all"
             android:text="근무자 관리"
             android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btn_del_pob"
-            app:layout_constraintTop_toTopOf="@+id/o_pob_next">
+            app:layout_constraintLeft_toRightOf="@+id/btn_del_pob"
+            app:layout_constraintTop_toTopOf="@+id/btn_del_pob"
+            app:layout_constraintEnd_toEndOf="parent">
 
         </androidx.appcompat.widget.AppCompatButton>
 

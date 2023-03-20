@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.signz_android.Usersign.FindAccountActivity
-import com.example.signz_android.WMain.ContractActivity
-import com.example.signz_android.WMain.WRecruitActivity
 import com.example.signz_android.databinding.FragmentCommunityBinding
 
 class CommunityFragment : Fragment() {
@@ -23,11 +21,11 @@ class CommunityFragment : Fragment() {
 
         //test
         binding.communityTest.setOnClickListener {
-            startActivity(Intent(activity, WRecruitActivity::class.java))
+            //startActivity(Intent(activity, WRecruitActivity::class.java))
         }
         //test
         binding.communityTest2.setOnClickListener {
-            startActivity(Intent(activity, ContractActivity::class.java))
+            //startActivity(Intent(activity, ContractActivity::class.java))
         }
         binding.btnTest.setOnClickListener {
             startActivity(Intent(activity, FindAccountActivity::class.java))
