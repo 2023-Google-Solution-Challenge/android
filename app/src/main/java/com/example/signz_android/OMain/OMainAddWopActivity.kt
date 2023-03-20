@@ -6,19 +6,19 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.JobpostData
 import com.example.signz_android.PobData
+import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityMainOwnerAddWopBinding
+import com.example.signz_android.databinding.ActivityWMainBinding
 import java.time.LocalDate
 
 class OMainAddWopActivity : AppCompatActivity() {
-
+    private lateinit var binding: ActivityMainOwnerAddWopBinding
     private val pobList = ArrayList<PobData>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainOwnerAddWopBinding.inflate(layoutInflater);
+        binding = ActivityMainOwnerAddWopBinding.inflate(layoutInflater);
         setContentView(binding.root)
-
-        pobList.apply { add(PobData("Cafe peach", "123-45-67890", "2023-03-16")) }
 
         binding.btnAddWopBack.setOnClickListener {
             finish()
@@ -36,7 +36,12 @@ class OMainAddWopActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show() else {
                 pobList.add(PobData(store_name, b_reg_num, onlyDate))
-                finish()
+                val bundle = Bundle()
+                bundle.putParcelableArrayList("item", pobList)
+                val ftab2 = OMainFragmentTab2()
+                ftab2.arguments = bundle
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.commit()
             }
         }
     }

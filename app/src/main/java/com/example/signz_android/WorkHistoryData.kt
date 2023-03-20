@@ -4,28 +4,28 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class PobData (
-    var store_name: String,
-    var b_reg_num: String,
-    var date: String
+data class WorkHistoryData (
+    var work_place: String,
+    var start_day: String,
+    var end_day: String
 ) : Parcelable
 {
     fun getData1(): String?{
-        return store_name
+        return work_place
     }
     fun setData1(name:String){
-        this.store_name = store_name
+        this.work_place = work_place
     }
     fun getData2(): String?{
-        return b_reg_num
+        return start_day
     }
     fun setData2(title: String){
-        this.b_reg_num = b_reg_num
+        this.start_day = start_day
     }
     fun getData3(): String?{
-        return date
+        return end_day
     }
     fun setData4(date: String){
-        this.date = date
+        this.end_day = end_day
     }
 }

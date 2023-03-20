@@ -5,6 +5,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.JobpostData
+import com.example.signz_android.PobData
 import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityOwnerMainJopBinding
 import java.time.LocalDate
@@ -13,18 +14,26 @@ import java.time.LocalTime
 class OMainAddJobActivity : AppCompatActivity() {
 
     private val jobList = ArrayList<JobpostData>()
+    private val pobList = ArrayList<PobData>()
+    private val place = ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityOwnerMainJopBinding.inflate(layoutInflater);
         setContentView(binding.root)
 
-        jobList.apply { add(JobpostData("Cafe peach", "Cafe peach needs new barista", "2023-03-16")) }
+        pobList.apply { add(PobData("Cafe peach", "123-45-67890", "2023-03-16"))
+            add(PobData("Gong cha", "123-45-67890", "2023-03-16")) }
 
         val spinner_poj = binding.spinnerPoj
         val spinner_money_type = binding.spMoney
         val sp_start = binding.spStartTime
         val sp_end = binding.spEndTime
+
+        for (i in 0 until pobList.count()){
+            place.add(pobList.get(i).store_name)
+            print(place)
+        }
 
         spinner_money_type.adapter = ArrayAdapter.createFromResource(
             this,
@@ -40,6 +49,12 @@ class OMainAddJobActivity : AppCompatActivity() {
             this,
             R.array.end_time,
             R.layout.style_spinner
+        )
+
+        spinner_poj.adapter = ArrayAdapter(
+            this,
+            R.layout.style_spinner,
+            place
         )
 
         binding.btnAddJobBack.setOnClickListener {
@@ -126,8 +141,8 @@ class OMainAddJobActivity : AppCompatActivity() {
             val work_period = binding.etWPeriod.toString()
             val st_string = sp_start.selectedItem.toString()
             val ed_string = sp_end.selectedItem.toString()
-            val start_time: LocalTime = LocalTime.parse(st_string)
-            val end_time: LocalTime = LocalTime.parse(ed_string)
+            //val start_time: LocalTime = LocalTime.parse(st_string)
+            //val end_time: LocalTime = LocalTime.parse(ed_string)
             var is_weekly_holiday_paid: Int? = null
             var work_day: Int? = null
             var period_type: Int? = null

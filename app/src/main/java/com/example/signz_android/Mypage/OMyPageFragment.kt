@@ -1,14 +1,19 @@
 package com.example.signz_android.Mypage
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
+import com.example.signz_android.OMain.OMainActivity
+import com.example.signz_android.WMain.WMainActivity
+import com.example.signz_android.WMain.WMainManageFragment
 import com.example.signz_android.databinding.FragmentOMypageBinding
 
-class MyPageFragment : Fragment() {
+class OMyPageFragment : Fragment() {
     private lateinit var binding: FragmentOMypageBinding
 
     override fun onCreateView(
@@ -31,7 +36,7 @@ class MyPageFragment : Fragment() {
         }
 
         binding.imgMypageJobinfo.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, WMainManageFragment::class.java))
         }
 
         binding.imgMypageMoney.setOnClickListener {
@@ -51,7 +56,14 @@ class MyPageFragment : Fragment() {
         }
 
         binding.tvBadge4.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            (activity as WMainActivity).finish()
+            startActivity(Intent(activity, OMainActivity::class.java))
+        }
+
+        binding.tvMypage.setOnClickListener {
+            (activity as WMainActivity).finish()
+            startActivity(Intent(activity, OMainActivity::class.java))
+
         }
 
         return binding.root

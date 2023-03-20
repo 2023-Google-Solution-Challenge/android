@@ -17,12 +17,15 @@ import java.time.LocalDate
 class SignupActivity : AppCompatActivity() {
     private val retrofit: Retrofit = RetrofitClient.getInstance()
     private val api: RetrofitInterface = retrofit.create(RetrofitInterface::class.java)
-    private val authToken = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivitySignupWorkerBinding.inflate(layoutInflater);
         setContentView(binding.root)
+
+        binding.btnSignupBack.setOnClickListener {
+            finish()
+        }
 
         binding.btnSignup.setOnClickListener {
             val email = binding.etSignupEmail.text.toString()
@@ -49,7 +52,7 @@ class SignupActivity : AppCompatActivity() {
                 ).show() else{
                     if (radioWorker.isChecked) {
                         if (pass==repass){
-                            api.addUserByEnqueue(userInfo = SignUpRequestBody(email, pass, birth, username, nickname, phone, latitude = 0.0, longitude = 0.0))
+                            api.addUserByEnqueue(userInfo = SignUpRequestBody(email, pass, b_string, username, nickname, phone, latitude = 0.0, longitude = 0.0))
                                 .enqueue(object : retrofit2.Callback<PolicyResponse> {
                                     override fun onResponse(
                                         call: Call<PolicyResponse>,
@@ -84,7 +87,7 @@ class SignupActivity : AppCompatActivity() {
                         }
                     } else if (radioOwner.isChecked) {
                         if (pass==repass){
-                            api.addOwnerByEnqueue(userInfo = SignUpRequestBody(email, pass, birth, username, nickname, phone, latitude = 0.0, longitude = 0.0))
+                            api.addOwnerByEnqueue(userInfo = SignUpRequestBody(email, pass, b_string, username, nickname, phone, latitude = 0.0, longitude = 0.0))
                                 .enqueue(object : retrofit2.Callback<PolicyResponse> {
                                     override fun onResponse(
                                         call: Call<PolicyResponse>,

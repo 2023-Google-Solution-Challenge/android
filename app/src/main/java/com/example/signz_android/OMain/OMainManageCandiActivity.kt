@@ -7,12 +7,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.signz_android.CandiData
 import com.example.signz_android.DialogSelectCandi
 import com.example.signz_android.databinding.ActivityOManageBinding
-import com.example.signz_android.databinding.ActivityOViewcandiBinding
 
 class OMainManageCandiActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOManageBinding
     private var adapter: OMainCandiRecyclerviewAdapter? = null
-    private val data: MutableList<CandiData> = mutableListOf()
+    private val data = ArrayList<CandiData>()
 
     init{
         instance = this
@@ -31,8 +30,9 @@ class OMainManageCandiActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        adapter = OMainCandiRecyclerviewAdapter()
-        adapter!!.listData = data
+        data.apply { add(CandiData("Gildong Hong", "Mon, Wed", "65")) }
+
+        adapter = OMainCandiRecyclerviewAdapter(data)
         binding.manageRecycle.adapter = adapter
         binding.manageRecycle.layoutManager = LinearLayoutManager(this)
 
@@ -42,7 +42,8 @@ class OMainManageCandiActivity : AppCompatActivity() {
     }
 
     fun startActivityViewCandi(){
-        startActivity(Intent(this, OMainViewCandi::class.java))
+        val intent = Intent(this, OMainViewCandiActivity::class.java)
+        startActivity(intent)
     }
 
     fun dialogSelectCandi(){

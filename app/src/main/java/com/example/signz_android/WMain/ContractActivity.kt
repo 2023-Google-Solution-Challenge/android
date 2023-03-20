@@ -1,4 +1,4 @@
-package com.example.signz_android
+package com.example.signz_android.WMain
 
 import android.Manifest
 import android.app.DatePickerDialog
@@ -17,6 +17,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityContractBinding
 import java.io.File
 import java.io.FileOutputStream

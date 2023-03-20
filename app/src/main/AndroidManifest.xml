@@ -19,6 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Signz_android"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
         <activity
@@ -54,11 +56,18 @@
         <activity android:name=".WMain.ContractActivity"/>
         <activity android:name=".Calendar.WPayActivity"/>
 
+        <activity android:name=".OMain.OMainActivity"/>
         <activity android:name=".OMain.OMainAddJobActivity"/>
         <activity android:name=".OMain.OMainAddWopActivity"/>
+        <activity android:name=".OMain.OMainModWopActivity"/>
+        <activity android:name=".OMain.OMainModJobActivity"/>
         <activity android:name=".OMain.OMainManageCandiActivity"/>
+        <activity android:name=".OMain.OMainViewCandiActivity"/>
         <activity android:name=".Mypage.SettingsActivity"/>
         <activity android:name=".Mypage.OMypageContractActivity"/>
+        <activity android:name=".Mypage.WMypageContractActivity"/>
+        <activity android:name=".Mypage.WMypageWorkHistoryActivity"/>
+        <activity android:name=".Mypage.WMypageAddWorkHistoryActivity"/>
         <activity android:name=".Mypage.DeleteAccountActivity"/>
         <activity android:name=".Mypage.ChangePasswordActivity"/>
         <activity android:name=".Mypage.ModifyInfoActivity"/>

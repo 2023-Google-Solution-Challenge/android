@@ -2,10 +2,10 @@ package com.example.signz_android.WMain
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.signz_android.Calendar.OCalendarFragment
 import com.example.signz_android.Calendar.WCalendarFragment
 import com.example.signz_android.CommunityFragment
-import com.example.signz_android.Mypage.MyPageFragment
+import com.example.signz_android.Mypage.OMyPageFragment
+import com.example.signz_android.Mypage.WMyPageFragment
 import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityWMainBinding
 
@@ -53,12 +53,30 @@ class WMainActivity : AppCompatActivity() {
 
                 R.id.fragment_mypage -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.frame_main, MyPageFragment())
+                        .replace(R.id.frame_main, WMyPageFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
             }
             false
+        }
+    }
+
+    fun changeFragment(index: Int){
+        when(index){
+            1 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame_main, WMyPageFragment())
+                    .commit()
+            }
+
+            2 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame_main, WMainManageFragment())
+                    .commit()
+            }
         }
     }
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.signz_android.OMain.OMainActivity
 import com.example.signz_android.WMain.WMainActivity
 import com.example.signz_android.databinding.ActivityLoginBinding
 
@@ -18,6 +19,9 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, WMainActivity::class.java))
         }
 
+        binding.tvSignupTv.setOnClickListener {
+            startActivity(Intent(this, OMainActivity::class.java))
+        }
 
         binding.passIdFind.setOnClickListener {
             val findIntent = Intent(this, FindAccountActivity::class.java)

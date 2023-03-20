@@ -10,8 +10,10 @@ import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.databinding.DialogContractBinding
+import com.example.signz_android.databinding.DialogDelpobBinding
 import com.example.signz_android.databinding.DialogFindaccountBinding
 import com.example.signz_android.databinding.DialogQuitBinding
+import com.example.signz_android.databinding.DialogRecruitendBinding
 import com.example.signz_android.databinding.DialogSelectcandiBinding
 
 class DialogFindId (
@@ -146,6 +148,66 @@ class DialogContract (
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DialogContractBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initViews()
+    }
+
+    private fun initViews() = with(binding) {
+        setCancelable(false)
+
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        tvDialogquitNo.setOnClickListener {
+            dismiss()
+        }
+        tvDialogquitOk.setOnClickListener {
+            okCallback("ok")
+            dismiss()
+
+        }
+    }
+}
+
+class DialogRecruitEnd (
+    context: Context,
+    private val okCallback: (String) -> Unit,
+) : Dialog(context) {
+
+    private lateinit var binding: DialogRecruitendBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DialogRecruitendBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initViews()
+    }
+
+    private fun initViews() = with(binding) {
+        setCancelable(false)
+
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        tvDialogquitNo.setOnClickListener {
+            dismiss()
+        }
+        tvDialogquitOk.setOnClickListener {
+            okCallback("ok")
+            dismiss()
+
+        }
+    }
+}
+
+class DialogDelPob (
+    context: Context,
+    private val okCallback: (String) -> Unit,
+) : Dialog(context) {
+
+    private lateinit var binding: DialogDelpobBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DialogDelpobBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
     }

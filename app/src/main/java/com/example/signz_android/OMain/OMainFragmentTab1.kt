@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.signz_android.DialogRecruitEnd
 import com.example.signz_android.JobpostData
+import com.example.signz_android.PobData
 import com.example.signz_android.databinding.ActivityMainOwnerFrag1Binding
 import com.example.signz_android.databinding.ActivityOManageBinding
 
@@ -44,9 +46,9 @@ class OMainFragmentTab1 : Fragment(){
     }
 
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        jobList.apply { add(JobpostData("Cafe peach", "Cafe peach needs new barista", "2023-03-16")) }
         listAdapter = OMainF1RecyclerViewAdapter(jobList)
         binding.frag1Recycle.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
         binding.frag1Recycle.adapter = listAdapter
@@ -66,6 +68,6 @@ class OMainFragmentTab1 : Fragment(){
     }
 
     fun dialog(){
-
+        DialogRecruitEnd(requireContext()) {}.show()
     }
 }
