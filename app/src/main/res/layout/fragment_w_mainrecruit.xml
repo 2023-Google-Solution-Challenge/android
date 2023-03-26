@@ -11,7 +11,7 @@
         android:id="@+id/tv_wmainrecruit_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="돈암동 주변"
+        android:text="Seoul 10 nearby neighborhoods"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>

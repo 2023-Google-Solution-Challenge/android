@@ -60,10 +60,9 @@ class WMainRecruitFragment : Fragment(), WMainRecruitView {
 
     private fun initRecyclerView(){
         wMainRecruitList.apply {
-            add(WMainRecruitResult("Cafe peach", "Cafe peach 직원 모집", "시급 9610원", 4.1, 80))
-            add(WMainRecruitResult("GS25 성신여대점", "GS25 성신여대점 스태프 모집", "시급 9610원", 4.2, 88))
-            add(WMainRecruitResult("신한은행", "신한은행 로비매니저 모집", "월급 2,000,000원", 4.5, 90))
-            add(WMainRecruitResult("롯데백화점", "수신호 인원 모집", "월급 1,780,000원", 4.3, 90))
+            add(WMainRecruitResult("Cafe peach", "Cafe peach staff", "₩9610 per hour", 4.1, 80))
+            add(WMainRecruitResult("신한은행", "bank counter manager", "₩2,000,000 per monthly", 4.3, 88))
+            add(WMainRecruitResult("signz", "signz language staff", "₩1,780,000 per monthly", 4.5, 90))
         }
         val wMainRecruitRVAdapter = WMainRecruitRVAdapter(requireContext(), wMainRecruitList)
         binding.rvWmainrecruit.adapter = wMainRecruitRVAdapter
