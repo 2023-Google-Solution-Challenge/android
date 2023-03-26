@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/v1_b3_wop" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mypage_history_recycle"
+        android:id="@+id/mypage_edu_recycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
