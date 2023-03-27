@@ -7,9 +7,9 @@ import com.example.signz_android.databinding.ActivityFindaccountBinding
 import com.example.signz_android.databinding.ActivityWPayBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
-class WPayActivity : AppCompatActivity() {
+class PayActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWPayBinding
-    private val tabPay = arrayListOf("정산내역", "입금완료")
+    private val tabPay = arrayListOf("Payroll", "Completion")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
