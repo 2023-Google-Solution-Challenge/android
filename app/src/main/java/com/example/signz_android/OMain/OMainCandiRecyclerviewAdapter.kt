@@ -29,7 +29,7 @@ class OMainCandiRecyclerviewAdapter(private var items: ArrayList<CandiData>) :
         fun bind(member: CandiData, position: Int){
             binding.tvCandiName.text = member.getData1()
             binding.tvWorkDay.text = member.getData2()
-            binding.tvCandiScore.text = member.getData3()
+            binding.tvCandiScore.text = member.getData4()
         }
     }
 

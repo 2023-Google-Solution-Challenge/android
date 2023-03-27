@@ -10,9 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.signz_android.DialogRecruitEnd
 import com.example.signz_android.JobpostData
-import com.example.signz_android.PobData
 import com.example.signz_android.databinding.ActivityMainOwnerFrag1Binding
-import com.example.signz_android.databinding.ActivityOManageBinding
+
 
 class OMainFragmentTab1 : Fragment(){
     private lateinit var binding: ActivityMainOwnerFrag1Binding

@@ -3,8 +3,7 @@ package com.example.signz_android.WMain
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.signz_android.Calendar.WCalendarFragment
-import com.example.signz_android.CommunityFragment
-import com.example.signz_android.Mypage.OMyPageFragment
+import com.example.signz_android.Community.CommunityFragment
 import com.example.signz_android.Mypage.WMyPageFragment
 import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityWMainBinding

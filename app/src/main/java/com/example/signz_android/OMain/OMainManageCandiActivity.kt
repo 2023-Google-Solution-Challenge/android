@@ -30,7 +30,7 @@ class OMainManageCandiActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        data.apply { add(CandiData("Gildong Hong", "Mon, Wed", "65")) }
+        data.apply { add(CandiData("Gildong Hong", "Mon, Wed", "10:00 ~ 14:00", "65")) }
 
         adapter = OMainCandiRecyclerviewAdapter(data)
         binding.manageRecycle.adapter = adapter
