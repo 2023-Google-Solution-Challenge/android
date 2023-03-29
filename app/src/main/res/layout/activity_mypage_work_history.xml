@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="근무이력"
+        android:text="Work history"
         android:textSize="16sp"
         android:textColor="@color/font"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
-        android:text="+ 근무이력 추가하기"
+        android:text="+ Add a work history"
         android:textColor="@color/font"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"

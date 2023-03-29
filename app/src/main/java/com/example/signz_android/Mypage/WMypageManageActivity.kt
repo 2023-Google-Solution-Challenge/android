@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.signz_android.WMain.WMainManageResult
 import com.example.signz_android.WMain.WQuitActivity
+import com.example.signz_android.WMain.WReportBottomSheet
 import com.example.signz_android.databinding.ActivityWMypagemanageBinding
 
 
@@ -31,7 +32,7 @@ class WMypageManageActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         wMainManageList.apply {
-            add(WMainManageResult("Cafe peach", "월요일,수요일", "10:00 ~ 14:00", "2022.11.19 ~ 2023.5.19"))
+            add(WMainManageResult("Cafe peach", "Mon,Wed", "10:00 ~ 14:00", "2022.11.19 ~ 2023.5.19"))
         }
         adapter = WMypageManageRVAdapter(wMainManageList)
         binding.rvWmange.adapter = adapter
@@ -48,7 +49,8 @@ class WMypageManageActivity : AppCompatActivity() {
     }
 
     fun onReportClick() {
-        startActivity(Intent(this, WQuitActivity::class.java))
+        val bottomSheet = WReportBottomSheet()
+        bottomSheet.show(supportFragmentManager, bottomSheet.tag)
     }
 
 }

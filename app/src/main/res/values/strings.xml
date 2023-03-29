@@ -17,7 +17,7 @@
         <item>월급</item>
     </string-array>
 
-    <string name="quit">계약 종료 최소 1달 전까지 사직 통보가 가능하며, 명시된 기간\n전에 사직할 경우 사유에 따라 신뢰도가 감점됩니다.\n정말 근무를 종료하시겠습니까?</string>
+    <string name="quit">Your resignation may be notified at least one month before the end of the contract, and if you resign before the specified period\n, your reliability will be deducted depending on the reason.\nAre you sure you want to end work?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

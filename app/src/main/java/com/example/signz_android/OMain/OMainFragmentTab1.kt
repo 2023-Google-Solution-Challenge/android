@@ -63,7 +63,8 @@ class OMainFragmentTab1 : Fragment(){
     }
 
     fun startActivity(){
-        startActivity(Intent(activity, OMainManageCandiActivity::class.java))
+        val intent = Intent(activity, OMainManageCandiActivity::class.java)
+        startActivity(intent)
     }
 
     fun dialog(){
