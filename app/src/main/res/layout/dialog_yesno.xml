@@ -8,15 +8,15 @@
     android:paddingHorizontal="24dp"
     android:paddingVertical="30dp">
     <TextView
-        android:id="@+id/tv_dialogquit"
+        android:id="@+id/tv_dialogyesno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quit"
+        android:text="@string/quit_e"
         android:textSize="14sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
     <Button
-        android:id="@+id/tv_dialogquit_no"
+        android:id="@+id/tv_dialogyesno_no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
@@ -25,14 +25,14 @@
         android:text="아니요"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tv_dialogquit"
+        app:layout_constraintTop_toBottomOf="@id/tv_dialogyesno"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tv_dialogquit_ok"
+        app:layout_constraintEnd_toStartOf="@id/tv_dialogyesno_ok"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         android:paddingVertical="20dp"
         android:paddingHorizontal="50dp"/>
     <Button
-        android:id="@+id/tv_dialogquit_ok"
+        android:id="@+id/tv_dialogyesno_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
@@ -41,8 +41,8 @@
         android:text="예"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/tv_dialogquit_no"
-        app:layout_constraintTop_toTopOf="@id/tv_dialogquit_no"
+        app:layout_constraintStart_toEndOf="@id/tv_dialogyesno_no"
+        app:layout_constraintTop_toTopOf="@id/tv_dialogyesno_no"
         app:layout_constraintEnd_toEndOf="parent"
         android:paddingVertical="20dp"
         android:paddingHorizontal="50dp"/>

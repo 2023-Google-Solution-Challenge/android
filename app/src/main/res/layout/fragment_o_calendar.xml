@@ -45,12 +45,11 @@
             android:id="@+id/rv_ocalendar_shop"
             android:layout_width="58dp"
             android:layout_height="58dp"
-            android:background="@drawable/shape_circle"
+            android:src="@drawable/img_shoplist_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/v1_ocalendar"
             app:layout_constraintBottom_toTopOf="@id/v2_ocalendar"
-            android:layout_marginLeft="24dp"
-            android:layout_marginVertical="12dp"/>
+            android:layout_marginLeft="24dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -105,7 +104,9 @@
                     android:layout_marginTop="12dp"
                     android:layout_marginRight="24dp"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_ocalendar_staffmanage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/box_calendar"
@@ -177,7 +178,37 @@
                     app:layout_constraintStart_toStartOf="@id/iv_ocalendar_worker1"
                     app:layout_constraintEnd_toEndOf="@id/iv_ocalendar_worker1"
                     android:layout_marginTop="2dp"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/box_stroke_gray_all"
+                    app:layout_constraintTop_toBottomOf="@id/tv_ocalendar_worker1dt"
+                    android:layout_marginTop="24dp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp">
+                    <TextView
+                        android:id="@+id/tv_ocalendar_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay date is the 5th"
+                        android:textSize="16dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_ocalendar_paymanage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="payroll manage"
+                        android:textColor="@color/white"
+                        android:background="@drawable/box_main_c_all"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingHorizontal="24dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

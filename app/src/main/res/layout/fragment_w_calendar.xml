@@ -45,16 +45,15 @@
             android:id="@+id/rv_wcalendar_shop"
             android:layout_width="58dp"
             android:layout_height="58dp"
-            android:background="@drawable/shape_circle"
+            android:src="@drawable/img_shoplist_1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/v1_wcalendar"
             app:layout_constraintBottom_toTopOf="@id/v2_wcalendar"
-            android:layout_marginLeft="24dp"
-            android:layout_marginVertical="12dp"/>
+            android:layout_marginLeft="24dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Star"
+            android:text="Cafe"
             android:textColor="@color/white"
             app:layout_constraintTop_toTopOf="@id/rv_wcalendar_shop"
             app:layout_constraintBottom_toBottomOf="@id/rv_wcalendar_shop"
@@ -107,6 +106,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_wpaymanage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/box_calendar"
@@ -140,7 +140,7 @@
                     android:id="@+id/tv2_wcalendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Day Of Work"
+                    android:text="Wokring Day"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@id/v3_wcalendar"
                     app:layout_constraintTop_toBottomOf="@id/v3_wcalendar"
@@ -149,7 +149,7 @@
                     android:id="@+id/tv3_wcalendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Payment"
+                    android:text="Hourly Pay"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="@id/v3_wcalendar"
                     app:layout_constraintTop_toBottomOf="@id/tv2_wcalendar"
@@ -167,80 +167,48 @@
                     android:id="@+id/tv_wcalendar_money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="₩500,000"
+                    android:text="₩9610"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@id/v3_wcalendar"
                     app:layout_constraintTop_toTopOf="@id/tv3_wcalendar"
                     app:layout_constraintBottom_toBottomOf="@id/tv3_wcalendar"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@color/white"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/cl_wcalendar"-->
-<!--                android:layout_marginTop="16dp"-->
-<!--                android:paddingHorizontal="24dp"-->
-<!--                android:paddingVertical="14dp">-->
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Payroll Management"-->
-<!--                    android:textSize="16sp"-->
-<!--                    app:layout_constraintTop_toTopOf="@id/btn_wcalendar_wpay"-->
-<!--                    app:layout_constraintBottom_toBottomOf="@id/btn_wcalendar_wpay"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"/>-->
-<!--                <ImageView-->
-<!--                    android:id="@+id/btn_wcalendar_wpay"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:src="@drawable/btn_all_right_15"-->
-<!--                    app:layout_constraintTop_toTopOf="parent"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"/>-->
-<!--                <View-->
-<!--                    android:id="@+id/v3_wcalendar"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="1dp"-->
-<!--                    android:background="@color/gray3"-->
-<!--                    app:layout_constraintTop_toBottomOf="@+id/btn_wcalendar_wpay"-->
-<!--                    android:layout_marginTop="12dp"/>-->
-<!--                <TextView-->
-<!--                    android:id="@+id/tv2_wcalendar"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Day Of Work"-->
-<!--                    android:textSize="14sp"-->
-<!--                    app:layout_constraintStart_toStartOf="@id/v3_wcalendar"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/v3_wcalendar"-->
-<!--                    android:layout_marginTop="20dp"/>-->
-<!--                <TextView-->
-<!--                    android:id="@+id/tv3_wcalendar"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Payment"-->
-<!--                    android:textSize="14sp"-->
-<!--                    app:layout_constraintStart_toStartOf="@id/v3_wcalendar"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/tv2_wcalendar"-->
-<!--                    android:layout_marginTop="16dp"/>-->
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_wcalendar_date"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="12day"-->
-<!--                    android:textSize="16sp"-->
-<!--                    app:layout_constraintEnd_toEndOf="@id/v3_wcalendar"-->
-<!--                    app:layout_constraintTop_toTopOf="@id/tv2_wcalendar"-->
-<!--                    app:layout_constraintBottom_toBottomOf="@id/tv2_wcalendar"/>-->
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_wcalendar_money"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="₩500,000"-->
-<!--                    android:textSize="16sp"-->
-<!--                    app:layout_constraintEnd_toEndOf="@id/v3_wcalendar"-->
-<!--                    app:layout_constraintTop_toTopOf="@id/tv3_wcalendar"-->
-<!--                    app:layout_constraintBottom_toBottomOf="@id/tv3_wcalendar"/>-->
-<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/cl_wpaymanage"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="18dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_wcalendar_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:text="Attendance"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/font"
+                    android:background="@drawable/box_stroke_gray_half_round_l"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_wcalendar_no"
+                    android:layout_marginTop="6dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_wcalendar_no"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:text="request holiday"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/font"
+                    android:background="@drawable/box_stroke_gray_half_round_r"
+                    app:layout_constraintTop_toTopOf="@id/btn_wcalendar_yes"
+                    app:layout_constraintStart_toEndOf="@id/btn_wcalendar_yes"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
