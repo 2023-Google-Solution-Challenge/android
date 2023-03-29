@@ -30,7 +30,7 @@ class WMypageContractFragmentT2 : Fragment() {
     }
 
     private fun initRecyclerView(){
-        jobList.apply { add(JobpostData("Gong cha", "Gong cha needs new barista", "2023-03-16")) }
+        jobList.apply { add(JobpostData("Gong cha", "Gong cha needs new barista", "2022-01-27")) }
         val listAdapter = WMypageContractT2RecyclerViewAdapter(jobList)
         binding.mypageT2Recycle.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
         binding.mypageT2Recycle.adapter = listAdapter

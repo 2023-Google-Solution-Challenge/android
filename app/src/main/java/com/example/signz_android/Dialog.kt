@@ -2,6 +2,7 @@ package com.example.signz_android
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -9,6 +10,10 @@ import android.view.View
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
+import com.example.signz_android.Mypage.OQuitActivity
+import com.example.signz_android.OMain.OMainViewCandiActivity
+import com.example.signz_android.WMain.ContractActivity
 import com.example.signz_android.databinding.DialogContractBinding
 import com.example.signz_android.databinding.DialogDelpobBinding
 import com.example.signz_android.databinding.DialogFindaccountBinding
@@ -112,20 +117,23 @@ class DialogQuit (
     }
 }
 
-class DialogSelectCandi (private val context : AppCompatActivity) {
+class DialogOQuit (private val context : AppCompatActivity) {
 
-    private lateinit var binding: DialogSelectcandiBinding
+    private lateinit var binding: DialogQuitBinding
     private val dlg = Dialog(context)   //부모 액티비티의 context 가 들어감
 
     fun show() {
-        binding = DialogSelectcandiBinding.inflate(context.layoutInflater)
+        binding = DialogQuitBinding.inflate(context.layoutInflater)
 
         dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
         dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
         dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+        dlg.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         //ok 버튼 동작
         binding.tvDialogquitOk.setOnClickListener {
+            //startActivity(Intent(this, OQuitActivity::class.java))
+            context.startActivity(Intent(context, OQuitActivity::class.java))
             dlg.dismiss()
         }
 
@@ -138,35 +146,63 @@ class DialogSelectCandi (private val context : AppCompatActivity) {
     }
 }
 
-class DialogContract (
-    context: Context,
-    private val okCallback: (String) -> Unit,
-) : Dialog(context) {
+class DialogSelectCandi (private val context : AppCompatActivity) {
 
-    private lateinit var binding: DialogContractBinding
+    private lateinit var binding: DialogSelectcandiBinding
+    private val dlg = Dialog(context)   //부모 액티비티의 context 가 들어감
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = DialogContractBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        initViews()
-    }
+    fun show() {
+        binding = DialogSelectcandiBinding.inflate(context.layoutInflater)
 
-    private fun initViews() = with(binding) {
-        setCancelable(false)
+        dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
+        dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
+        dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+        dlg.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-
-        tvDialogquitNo.setOnClickListener {
-            dismiss()
+        //ok 버튼 동작
+        binding.tvDialogquitOk.setOnClickListener {
+            val dialog = DialogContract(context)
+            dialog.show()
+            dlg.dismiss()
         }
-        tvDialogquitOk.setOnClickListener {
-            okCallback("ok")
-            dismiss()
 
+        //cancel 버튼 동작
+        binding.tvDialogquitNo.setOnClickListener {
+            dlg.dismiss()
         }
+
+        dlg.show()
     }
 }
+
+
+
+class DialogContract (private val context : AppCompatActivity) {
+
+    private lateinit var binding: DialogContractBinding
+    private val dlg = Dialog(context)
+
+    fun show() {
+        binding = DialogContractBinding.inflate(context.layoutInflater)
+
+        dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
+        dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
+        dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+        dlg.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        binding.tvDialogquitNo.setOnClickListener {
+            dlg.dismiss()
+        }
+        binding.tvDialogquitOk.setOnClickListener {
+            context.startActivity(Intent(context, ContractActivity::class.java))
+            dlg.dismiss()
+        }
+        dlg.show()
+    }
+}
+
+
+
 
 class DialogRecruitEnd (
     context: Context,

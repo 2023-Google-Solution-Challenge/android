@@ -79,6 +79,7 @@ class OMainAddJobActivity : AppCompatActivity() {
         binding.btnProbationN.setOnClickListener {
             binding.btnProbationY.isSelected = false
             binding.btnProbationN.isSelected = true
+            binding.etProbationDay.isEnabled = false
         }
 
         binding.btnMday.setOnClickListener {

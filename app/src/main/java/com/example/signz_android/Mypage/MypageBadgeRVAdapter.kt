@@ -2,7 +2,6 @@ package com.example.signz_android.Mypage
 
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
@@ -19,7 +18,7 @@ class MypageBadgeRVAdapter(private var items: ArrayList<EduData>):
         private val context = binding.root.context
         private val img : ImageView = binding.imgThumbnail
 
-        fun bind(member: EduData, position: Int){
+        fun bind(member: EduData){
             val id : String = member.getData1().substring(member.getData1().lastIndexOf("/") + 1)
             val url = "https://img.youtube.com/vi/$id/default.jpg"
             Glide.with(itemView).load(url).into(img)
@@ -42,7 +41,7 @@ class MypageBadgeRVAdapter(private var items: ArrayList<EduData>):
 
     override fun onBindViewHolder(holder: MypageBadgeRVAdapter.ListItemViewHolder, position: Int) {
         val member = items[position]
-        holder.bind(member, position)
+        holder.bind(member)
     }
 
     override fun getItemCount(): Int {

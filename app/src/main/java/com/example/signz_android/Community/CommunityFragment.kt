@@ -33,7 +33,7 @@ class CommunityFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         val pagerAdapter = OViewPagerAdapter(requireActivity())
         pagerAdapter.addFragment(CommunityFragmentT1())
-        //pagerAdapter.addFragment(OMainFragmentTab2())
+        pagerAdapter.addFragment(CommunityFragmentT2())
 
         binding.viewpagerCommunityCon.adapter = pagerAdapter
         binding.viewpagerCommunityCon.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){

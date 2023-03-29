@@ -12,7 +12,7 @@ import com.example.signz_android.databinding.FragmentOMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 class OMainFragment : Fragment() {
-    private val tabTitleArray = arrayOf("채용 공고", "사업장 관리")
+    private val tabTitleArray = arrayOf("Job Postings", "Workplace")
     private lateinit var binding: FragmentOMainBinding
 
     override fun onCreateView(

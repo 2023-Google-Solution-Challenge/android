@@ -48,7 +48,8 @@ class WMypageWorkHistoryActivity : AppCompatActivity(){
 
     private fun initialize(){
         with(whlist){
-            add(WorkHistoryData("GS25", "2022-1-5", "2022-3-4"))
+            add(WorkHistoryData("Gongcha", "2022-1-5", "2022-10-10"))
+            add(WorkHistoryData("Movie theater", "2020-11-27", "2021-11-11"))
         }
     }
 }
