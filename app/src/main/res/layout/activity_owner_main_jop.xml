@@ -124,6 +124,7 @@
                 android:layout_marginTop="4dp"
                 android:background="@drawable/box_stroke_gray_all"
                 android:hint="number"
+                android:inputType="number"
                 android:textColorHint="@color/gray1"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@+id/tv4_add_job"
@@ -233,6 +234,7 @@
                 android:hint="number"
                 android:textColorHint="@color/gray1"
                 android:textSize="14sp"
+                android:inputType="number"
                 android:layout_marginTop="4dp"
                 app:layout_constraintStart_toEndOf="@+id/btn_probation_n"
                 app:layout_constraintTop_toBottomOf="@+id/tv6_add_job"/>
@@ -424,6 +426,7 @@
                 android:background="@drawable/box_stroke_gray_all"
                 android:textColorHint="@color/gray1"
                 android:textSize="14sp"
+                android:inputType="number"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv10_add_job"/>
 

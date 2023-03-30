@@ -142,12 +142,11 @@ class DialogOkCancel (
 
 class DialogManageQuit (private val context : AppCompatActivity) {
 
-    private lateinit var binding: DialogYesnoBinding
+    private lateinit var binding: DialogOquitBinding
     private val dlg = Dialog(context)   //부모 액티비티의 context 가 들어감
 
     fun show() {
-        binding = DialogYesnoBinding.inflate(context.layoutInflater)
-
+        binding = DialogOquitBinding.inflate(context.layoutInflater)
 
         dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
         dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
