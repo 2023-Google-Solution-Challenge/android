@@ -18,6 +18,15 @@ class OCalendarFragment : Fragment() {
     ): View? {
         binding = FragmentOCalendarBinding.inflate(inflater, container, false)
 
+        binding.btnOcalendarManage.setOnClickListener {
+
+        }
+        binding.btnOcalendarPaymanage.setOnClickListener{
+            startActivity(Intent(context, PayActivity::class.java))
+        }
+        binding.btnOcalendarNotice.setOnClickListener {
+            startActivity(Intent(context, CalendarNoticeActivity::class.java))
+        }
 
         return binding.root
     }

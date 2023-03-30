@@ -5,9 +5,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContentProviderCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.signz_android.*
+import com.example.signz_android.Usersign.LoginActivity
 import com.example.signz_android.databinding.FragmentWMainmanageBinding
 
 
@@ -31,7 +34,7 @@ class WMainManageFragment : Fragment() {
 
     private fun initRecyclerView(){
         wMainManageList.apply {
-            add(WMainManageResult("Cafe peach", "월요일,수요일", "10:00 ~ 14:00", "2022.11.19 ~ 2023.5.19"))
+            add(WMainManageResult("Cafe peach", "Mon,Wed", "10:00 ~ 15:00", "2023.03.16 start"))
         }
         val wMainManageRVAdapter = WMainManageRVAdapter(requireContext(), wMainManageList)
         binding.rvWmange.adapter = wMainManageRVAdapter
@@ -43,7 +46,11 @@ class WMainManageFragment : Fragment() {
             }
 
             override fun onQuitClick(recruit: WMainManageResult) {
-                startActivity(Intent(context, WQuitActivity::class.java))
+                DialogYesNo(requireContext()){
+                    if(it == "yes"){
+                        startActivity(Intent(activity, WQuitActivity::class.java))
+                    }
+                }.show()
             }
 
             override fun onReportClick(recruit: WMainManageResult) {

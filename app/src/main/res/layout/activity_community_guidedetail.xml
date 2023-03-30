@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="13dp">
+    <ImageView
+        android:id="@+id/btn_guidedetail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_all_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="24dp"/>
+    <View
+        android:id="@+id/v1_guidedetail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guidedetail_back"
+        android:layout_marginTop="13dp"/>
+
+    <ImageView
+        android:id="@+id/iv_guidedetail"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img_guide_q"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1_guidedetail"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is a employment contract required?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/iv_guidedetail"
+        app:layout_constraintTop_toTopOf="@id/iv_guidedetail"
+        app:layout_constraintBottom_toBottomOf="@id/iv_guidedetail"
+        android:layout_marginLeft="12sp"/>
+    <View
+        android:id="@+id/v2_guidedetail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintTop_toBottomOf="@id/iv_guidedetail"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A employment contract is a contract that specifies the rights and obligations of workers and employers, as well as working conditions. The employment contract must be written in accordance with the Labor Standards Act and provides legal protection to both workers and employers."
+        app:layout_constraintTop_toBottomOf="@id/v2_guidedetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="24dp"
+        android:layout_marginTop="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

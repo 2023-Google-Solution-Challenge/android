@@ -10,7 +10,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class WMainFragment : Fragment() {
     private lateinit var binding: FragmentWMainBinding
-    private val tabwmain = arrayListOf("채용공고", "근무 관리")
+    private val tabwmain = arrayListOf("Jobs", "Work Management")
 
     override fun onCreateView(
         inflater: LayoutInflater,

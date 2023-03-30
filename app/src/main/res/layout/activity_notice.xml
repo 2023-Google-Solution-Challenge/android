@@ -28,16 +28,40 @@
         android:background="@color/gray3"
         app:layout_constraintTop_toBottomOf="@+id/btn_notice_back"
         android:layout_marginTop="13dp"/>
-    
-    <androidx.recyclerview.widget.RecyclerView
+    <ImageView
         android:id="@+id/rv_notice_shop"
-        android:layout_width="match_parent"
-        android:layout_height="84dp"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:src="@drawable/img_shoplist_1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/v1_notice"
-        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-        tools:listitem="@layout/item_shop"
-        android:paddingVertical="12dp"
-        android:paddingHorizontal="24dp"/>
+        app:layout_constraintBottom_toTopOf="@id/v2_notice"
+        android:layout_marginLeft="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafe"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/rv_notice_shop"
+        app:layout_constraintBottom_toBottomOf="@id/rv_notice_shop"
+        app:layout_constraintStart_toStartOf="@id/rv_notice_shop"
+        app:layout_constraintEnd_toEndOf="@id/rv_notice_shop"/>
+    <View
+        android:id="@+id/v2_notice"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray3"
+        app:layout_constraintTop_toBottomOf="@+id/rv_notice_shop"/>
+    
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_notice_shop"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="84dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/v1_notice"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"-->
+<!--        tools:listitem="@layout/item_shop"-->
+<!--        android:paddingVertical="12dp"-->
+<!--        android:paddingHorizontal="24dp"/>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_notice_notice"
@@ -46,7 +70,7 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_notice"
         app:layout_constraintTop_toBottomOf="@id/rv_notice_shop"
-        android:layout_marginTop="14dp"/>
+        android:paddingHorizontal="24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

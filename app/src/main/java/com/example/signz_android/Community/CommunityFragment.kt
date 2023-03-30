@@ -8,10 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.example.signz_android.OMain.OMainFragmentTab1
-import com.example.signz_android.OMain.OMainFragmentTab2
 import com.example.signz_android.OViewPagerAdapter
-import com.example.signz_android.Usersign.FindAccountActivity
 import com.example.signz_android.databinding.FragmentCommunityBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -32,8 +29,9 @@ class CommunityFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val pagerAdapter = OViewPagerAdapter(requireActivity())
+
         pagerAdapter.addFragment(CommunityFragmentT1())
-        pagerAdapter.addFragment(CommunityFragmentT2())
+        pagerAdapter.addFragment(GuideFragment())
 
         binding.viewpagerCommunityCon.adapter = pagerAdapter
         binding.viewpagerCommunityCon.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){

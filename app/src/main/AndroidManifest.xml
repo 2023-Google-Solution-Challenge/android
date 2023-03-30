@@ -55,8 +55,14 @@
         <activity android:name=".WMain.WRecruitActivity"/>
         <activity android:name=".WMain.WQuitActivity"/>
         <activity android:name=".WMain.ContractActivity"/>
-        <activity android:name=".Calendar.WPayActivity"/>
-        <activity android:name=".Mypage.OQuitActivity"/>
+
+        <activity android:name=".Calendar.PayActivity"/>
+        <activity android:name=".Calendar.PayAddBankActivity"/>
+        <activity android:name=".Calendar.CalendarNoticeActivity"/>
+
+        <activity android:name=".Community.GuideDetailActivity"/>
+
+
         <activity android:name=".OMain.OMainActivity"/>
         <activity android:name=".OMain.OMainAddJobActivity"/>
         <activity android:name=".OMain.OMainAddWopActivity"/>
@@ -64,6 +70,7 @@
         <activity android:name=".OMain.OMainModJobActivity"/>
         <activity android:name=".OMain.OMainManageCandiActivity"/>
         <activity android:name=".OMain.OMainViewCandiActivity"/>
+
         <activity android:name=".Mypage.SettingsActivity"/>
         <activity android:name=".Mypage.MypageBadge1Activity"/>
         <activity android:name=".Mypage.MypageBadge2Activity"/>
@@ -72,8 +79,7 @@
         <activity android:name=".Mypage.MypageYoutubeViewActivity"/>
         <activity android:name=".Mypage.OMypageContractActivity"/>
         <activity android:name=".Mypage.WMypageContractActivity"/>
-        <activity android:name=".Mypage.WMypageManageActivity"/>
-        <activity android:name=".Mypage.OMypageManageActivity"/>
+        
         <activity android:name=".Mypage.WMypageWorkHistoryActivity"/>
         <activity android:name=".Mypage.WMypageAddWorkHistoryActivity"/>
         <activity android:name=".Mypage.DeleteAccountActivity"/>

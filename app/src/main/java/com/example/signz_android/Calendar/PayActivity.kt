@@ -1,5 +1,6 @@
 package com.example.signz_android.Calendar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.Usersign.FindAccountVPAdapter
@@ -7,9 +8,9 @@ import com.example.signz_android.databinding.ActivityFindaccountBinding
 import com.example.signz_android.databinding.ActivityWPayBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
-class WPayActivity : AppCompatActivity() {
+class PayActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWPayBinding
-    private val tabPay = arrayListOf("정산내역", "입금완료")
+    private val tabPay = arrayListOf("Payroll", "Completion")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +20,9 @@ class WPayActivity : AppCompatActivity() {
         //뒤로가기
         binding.btnWpayBack.setOnClickListener {
             finish()
+        }
+        binding.btnWpayAdd.setOnClickListener {
+            startActivity(Intent(this, PayAddBankActivity::class.java))
         }
 
         //뷰페이저 연결
