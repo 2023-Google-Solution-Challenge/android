@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SeekBar
-import android.widget.SlidingDrawer
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat.startActivity
 import androidx.fragment.app.Fragment
@@ -60,7 +59,7 @@ class WMainRecruitFragment : Fragment(), WMainRecruitView {
 
     private fun initRecyclerView(){
         wMainRecruitList.apply {
-            add(WMainRecruitResult("Cafe peach", "Cafe peach staff", "₩9610 per hour", 4.1, 80))
+            add(WMainRecruitResult("Cafe peach", "Cafe peach needs new barista", "₩9620 per hour", 4.1, 80))
             add(WMainRecruitResult("신한은행", "bank counter manager", "₩2,000,000 per monthly", 4.3, 88))
             add(WMainRecruitResult("signz", "signz language staff", "₩1,780,000 per monthly", 4.5, 90))
         }

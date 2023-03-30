@@ -6,11 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.signz_android.Calendar.WPayActivity
-import com.example.signz_android.R
+import com.example.signz_android.Calendar.PayActivity
 import com.example.signz_android.WMain.WMainActivity
-import com.example.signz_android.WMain.WMainManageFragment
-import com.example.signz_android.databinding.FragmentOMypageBinding
 import com.example.signz_android.databinding.FragmentWMypageBinding
 
 class WMyPageFragment : Fragment() {
@@ -40,7 +37,7 @@ class WMyPageFragment : Fragment() {
         }
 
         binding.imgMypageMoney.setOnClickListener {
-            startActivity(Intent(activity, WPayActivity::class.java))
+            startActivity(Intent(activity, PayActivity::class.java))
         }
 
         binding.tvBadge1.setOnClickListener {
@@ -48,15 +45,15 @@ class WMyPageFragment : Fragment() {
         }
 
         binding.tvBadge2.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, MypageBadge1Activity::class.java))
         }
 
         binding.tvBadge3.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, MypageBadge2Activity::class.java))
         }
 
         binding.tvBadge4.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, MypageBadge3Activity::class.java))
         }
 
         return binding.root

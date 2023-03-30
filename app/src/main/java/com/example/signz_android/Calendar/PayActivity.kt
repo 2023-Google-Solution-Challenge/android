@@ -1,5 +1,6 @@
 package com.example.signz_android.Calendar
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.Usersign.FindAccountVPAdapter
@@ -19,6 +20,9 @@ class PayActivity : AppCompatActivity() {
         //뒤로가기
         binding.btnWpayBack.setOnClickListener {
             finish()
+        }
+        binding.btnWpayAdd.setOnClickListener {
+            startActivity(Intent(this, PayAddBankActivity::class.java))
         }
 
         //뷰페이저 연결

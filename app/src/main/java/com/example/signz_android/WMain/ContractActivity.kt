@@ -21,6 +21,8 @@ import com.example.signz_android.R
 import com.example.signz_android.databinding.ActivityContractBinding
 import java.io.File
 import java.io.FileOutputStream
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
 class ContractActivity : AppCompatActivity() {
     private lateinit var binding: ActivityContractBinding
@@ -86,6 +88,21 @@ class ContractActivity : AppCompatActivity() {
         }
 
         //휴게시간 선택
+        binding.etContractSbreak.setOnClickListener {
+            val calendar = Calendar.getInstance()
+            val timeSetListener = TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
+                binding.etContractSbreak.text = "${hourOfDay}:${minute}"
+            }
+            TimePickerDialog(this,
+                R.style.DatePickerStyle, timeSetListener, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE),true).show()
+        }
+        binding.etContractEbreak.setOnClickListener {
+            val calendar = Calendar.getInstance()
+            val timeSetListener = TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
+                binding.etContractEbreak.text = "${hourOfDay}:${minute}"
+            }
+            TimePickerDialog(this, timeSetListener, calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE),true).show()
+        }
 
         //요일 선택
         binding.etContractDay.adapter = ArrayAdapter(this,
@@ -103,6 +120,8 @@ class ContractActivity : AppCompatActivity() {
 //
 //            }
 //        }
+        //작성일
+        binding.tvContractWriteday.text = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy.MM.dd")).toString()
 
     }
 

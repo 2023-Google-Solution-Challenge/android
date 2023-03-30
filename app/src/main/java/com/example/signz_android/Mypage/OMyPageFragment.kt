@@ -44,20 +44,19 @@ class OMyPageFragment : Fragment() {
         }
 
         binding.tvBadge1.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, MypageBadge1Activity::class.java))
         }
 
         binding.tvBadge2.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, MypageBadge2Activity::class.java))
         }
 
         binding.tvBadge3.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, MypageBadge3Activity::class.java))
         }
 
         binding.tvBadge4.setOnClickListener {
-            (activity as WMainActivity).finish()
-            startActivity(Intent(activity, OMainActivity::class.java))
+            startActivity(Intent(activity, MypageBadge4Activity::class.java))
         }
 
         binding.tvMypage.setOnClickListener {

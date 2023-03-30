@@ -9,12 +9,7 @@ import android.view.View
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.signz_android.databinding.DialogContractBinding
-import com.example.signz_android.databinding.DialogDelpobBinding
-import com.example.signz_android.databinding.DialogFindaccountBinding
-import com.example.signz_android.databinding.DialogQuitBinding
-import com.example.signz_android.databinding.DialogRecruitendBinding
-import com.example.signz_android.databinding.DialogSelectcandiBinding
+import com.example.signz_android.databinding.*
 
 class DialogFindId (
     context: Context,
@@ -81,17 +76,17 @@ class DialogFindPw (
         }
     }
 }
-
-class DialogQuit (
+//
+class DialogYesNo (
     context: Context,
     private val okCallback: (String) -> Unit,
 ) : Dialog(context) {
 
-    private lateinit var binding: DialogQuitBinding
+    private lateinit var binding: DialogYesnoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DialogQuitBinding.inflate(layoutInflater)
+        binding = DialogYesnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
     }
@@ -101,16 +96,78 @@ class DialogQuit (
 
         window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-        tvDialogquitNo.setOnClickListener {
+        tvDialogyesnoNo.setOnClickListener {
             dismiss()
         }
-        tvDialogquitOk.setOnClickListener {
+        tvDialogyesnoOk.setOnClickListener {
+            okCallback("yes")
+            dismiss()
+
+        }
+    }
+}
+
+class DialogOkCancel (
+    context: Context,
+    private val okCallback: (String) -> Unit,
+) : Dialog(context) {
+
+    private lateinit var binding: DialogOkcancelBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DialogOkcancelBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initViews()
+    }
+
+    private fun initViews() = with(binding) {
+        setCancelable(false)
+
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        tvDialogokcancelCancel.setOnClickListener {
+            dismiss()
+        }
+        tvDialogokcancelOk.setOnClickListener {
             okCallback("ok")
             dismiss()
 
         }
     }
 }
+
+class DialogHoliday (
+    context: Context,
+    private val okCallback: (String) -> Unit,
+) : Dialog(context) {
+
+    private lateinit var binding: DialogHolidayBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = DialogHolidayBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initViews()
+    }
+
+    private fun initViews() = with(binding) {
+        setCancelable(false)
+
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        tvDialogholidayCancel.setOnClickListener {
+            dismiss()
+        }
+        tvDialogholidayOk.setOnClickListener {
+            okCallback("ok")
+            dismiss()
+
+        }
+    }
+}
+
+
 
 class DialogSelectCandi (private val context : AppCompatActivity) {
 
@@ -143,11 +200,11 @@ class DialogContract (
     private val okCallback: (String) -> Unit,
 ) : Dialog(context) {
 
-    private lateinit var binding: DialogContractBinding
+    private lateinit var binding: DialogContractYesnoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DialogContractBinding.inflate(layoutInflater)
+        binding = DialogContractYesnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
     }

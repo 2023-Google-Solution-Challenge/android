@@ -1,5 +1,6 @@
 package com.example.signz_android.Community
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +17,10 @@ class GuideFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentCommunityGuideBinding.inflate(inflater, container, false)
+
+        binding.tvItemguide.setOnClickListener{
+            startActivity(Intent(context, GuideDetailActivity::class.java))
+        }
 
         return binding.root
     }
