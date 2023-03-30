@@ -10,6 +10,7 @@ import android.view.View
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.signz_android.WMain.ContractActivity
 import com.example.signz_android.databinding.*
 
 
@@ -139,6 +140,34 @@ class DialogOkCancel (
     }
 }
 
+class DialogManageQuit (private val context : AppCompatActivity) {
+
+    private lateinit var binding: DialogYesnoBinding
+    private val dlg = Dialog(context)   //부모 액티비티의 context 가 들어감
+
+    fun show() {
+        binding = DialogYesnoBinding.inflate(context.layoutInflater)
+
+
+        dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
+        dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
+        dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+        dlg.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        //ok 버튼 동작
+        binding.tvDialogyesnoOk.setOnClickListener {
+            dlg.dismiss()
+        }
+
+        //cancel 버튼 동작
+        binding.tvDialogyesnoNo.setOnClickListener {
+            dlg.dismiss()
+        }
+
+        dlg.show()
+    }
+}
+
 
 class DialogHoliday (
     context: Context,
@@ -205,11 +234,11 @@ class DialogSelectCandi (private val context : AppCompatActivity) {
 
 class DialogContract (private val context : AppCompatActivity) {
 
-    private lateinit var binding: DialogContractBinding
+    private lateinit var binding: DialogContractYesnoBinding
     private val dlg = Dialog(context)
 
     fun show() {
-        binding = DialogContractBinding.inflate(context.layoutInflater)
+        binding = DialogContractYesnoBinding.inflate(context.layoutInflater)
 
         dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
         dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴

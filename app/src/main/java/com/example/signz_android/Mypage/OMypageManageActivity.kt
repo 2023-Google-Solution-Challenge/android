@@ -4,10 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.signz_android.CandiData
-import com.example.signz_android.DialogOQuit
-import com.example.signz_android.DialogQuit
-import com.example.signz_android.DialogSelectCandi
+import com.example.signz_android.*
 import com.example.signz_android.WMain.WMainManageResult
 import com.example.signz_android.WMain.WQuitActivity
 import com.example.signz_android.databinding.ActivityOMypagemanageBinding
@@ -49,7 +46,7 @@ class OMypageManageActivity : AppCompatActivity() {
     }
 
     fun onQuitClick() {
-        val dialog = DialogOQuit(this)
+        val dialog = DialogManageQuit(this)
         dialog.show()
         //startActivity(Intent(this, OQuitActivity::class.java))
     }

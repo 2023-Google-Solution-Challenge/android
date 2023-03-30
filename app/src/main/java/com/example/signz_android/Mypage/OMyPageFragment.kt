@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
+import com.example.signz_android.Calendar.PayActivity
 import com.example.signz_android.OMain.OMainActivity
 import com.example.signz_android.WMain.WMainActivity
 import com.example.signz_android.WMain.WMainManageFragment
@@ -41,7 +42,7 @@ class OMyPageFragment : Fragment() {
         }
 
         binding.imgMypageMoney.setOnClickListener {
-            startActivity(Intent(activity, SettingsActivity::class.java))
+            startActivity(Intent(activity, PayActivity::class.java))
         }
 
         binding.tvBadge1.setOnClickListener {
