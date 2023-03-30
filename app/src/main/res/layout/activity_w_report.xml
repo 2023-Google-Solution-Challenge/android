@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="664dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_background"
+    android:paddingTop="24dp"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/tv1_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:textSize="16sp"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch the button to go to the reporting page.\nFalse reporting can be punished."
+        android:textSize="12sp"
+        android:textColor="@color/font"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1_report"  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report_pay"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:text="overdue payment of wages"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv2_report"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report_overwork"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:text="exploitation of labor"
+        android:textSize="12sp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintLeft_toRightOf="@id/btn_report_pay"
+        app:layout_constraintTop_toBottomOf="@id/tv2_report"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report_fire"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:text="unfair dismissal"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_report_pay"
+        android:layout_marginTop="7dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report_treatment"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:text="unfair treatment"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        android:layout_marginStart="12dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_report_fire"
+        app:layout_constraintTop_toBottomOf="@id/btn_report_overwork"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:id="@+id/tv3_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other matters"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_report_fire" />
+
+    <EditText
+        android:id="@+id/et_report"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:background="@drawable/box_stroke_gray_all"
+        app:layout_constraintTop_toBottomOf="@id/tv3_report"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="9dp"
+        android:textSize="12sp"
+        android:hint="If you don't have anything that corresponds to the above item, please write it down here briefly.\nAn expert will answer."/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_report_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="submit"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/box_main_c_all"
+        app:layout_constraintTop_toBottomOf="@+id/et_report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

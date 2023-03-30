@@ -2,6 +2,7 @@ package com.example.signz_android
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -10,6 +11,7 @@ import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.databinding.*
+
 
 class DialogFindId (
     context: Context,
@@ -137,6 +139,7 @@ class DialogOkCancel (
     }
 }
 
+
 class DialogHoliday (
     context: Context,
     private val okCallback: (String) -> Unit,
@@ -168,7 +171,6 @@ class DialogHoliday (
 }
 
 
-
 class DialogSelectCandi (private val context : AppCompatActivity) {
 
     private lateinit var binding: DialogSelectcandiBinding
@@ -177,12 +179,16 @@ class DialogSelectCandi (private val context : AppCompatActivity) {
     fun show() {
         binding = DialogSelectcandiBinding.inflate(context.layoutInflater)
 
+
         dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
         dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
         dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+        dlg.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
         //ok 버튼 동작
         binding.tvDialogquitOk.setOnClickListener {
+            val dialog = DialogContract(context)
+            dialog.show()
             dlg.dismiss()
         }
 
@@ -195,35 +201,34 @@ class DialogSelectCandi (private val context : AppCompatActivity) {
     }
 }
 
-class DialogContract (
-    context: Context,
-    private val okCallback: (String) -> Unit,
-) : Dialog(context) {
 
-    private lateinit var binding: DialogContractYesnoBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = DialogContractYesnoBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        initViews()
-    }
+class DialogContract (private val context : AppCompatActivity) {
 
-    private fun initViews() = with(binding) {
-        setCancelable(false)
+    private lateinit var binding: DialogContractBinding
+    private val dlg = Dialog(context)
 
-        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+    fun show() {
+        binding = DialogContractBinding.inflate(context.layoutInflater)
 
-        tvDialogquitNo.setOnClickListener {
-            dismiss()
+        dlg.requestWindowFeature(Window.FEATURE_NO_TITLE)   //타이틀바 제거
+        dlg.setContentView(binding.root)     //다이얼로그에 사용할 xml 파일을 불러옴
+        dlg.setCancelable(false)    //다이얼로그의 바깥 화면을 눌렀을 때 다이얼로그가 닫히지 않도록 함
+        dlg.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        binding.tvDialogquitNo.setOnClickListener {
+            dlg.dismiss()
         }
-        tvDialogquitOk.setOnClickListener {
-            okCallback("ok")
-            dismiss()
-
+        binding.tvDialogquitOk.setOnClickListener {
+            context.startActivity(Intent(context, ContractActivity::class.java))
+            dlg.dismiss()
         }
+        dlg.show()
     }
 }
+
+
+
 
 class DialogRecruitEnd (
     context: Context,

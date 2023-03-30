@@ -29,7 +29,8 @@ class CommunityFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         val pagerAdapter = OViewPagerAdapter(requireActivity())
-//        pagerAdapter.addFragment(CommunityFragmentT1())
+
+        pagerAdapter.addFragment(CommunityFragmentT1())
         pagerAdapter.addFragment(GuideFragment())
 
         binding.viewpagerCommunityCon.adapter = pagerAdapter

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContentProviderCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.signz_android.*
 import com.example.signz_android.Usersign.LoginActivity
@@ -53,7 +54,8 @@ class WMainManageFragment : Fragment() {
             }
 
             override fun onReportClick(recruit: WMainManageResult) {
-                startActivity(Intent(context, WQuitActivity::class.java))
+                val bottomSheet = WReportBottomSheet()
+                bottomSheet.show(childFragmentManager, bottomSheet.tag)
             }
         })
     }

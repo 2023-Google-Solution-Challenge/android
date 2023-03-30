@@ -49,8 +49,10 @@ class SignupActivity : AppCompatActivity() {
                     this@SignupActivity,
                     "회원정보를 전부 입력해주세요",
                     Toast.LENGTH_SHORT
-                ).show() else{
-                    if (radioWorker.isChecked) {
+                ).show() else {
+                    finish()
+                }
+/*                    if (radioWorker.isChecked) {
                         if (pass==repass){
                             api.addUserByEnqueue(userInfo = SignUpRequestBody(email, pass, b_string, username, nickname, phone, latitude = 0.0, longitude = 0.0))
                                 .enqueue(object : retrofit2.Callback<PolicyResponse> {
@@ -110,7 +112,7 @@ class SignupActivity : AppCompatActivity() {
                                         Log.d("회원가입 실패", t.message.toString())
                                         Toast.makeText(
                                             this@SignupActivity,
-                                            "비밀번호가 일치하지 않습니다.",
+                                            "회원가입에 실패하였습니다.",
                                             Toast.LENGTH_SHORT
                                         ).show()
                                     }
@@ -129,11 +131,12 @@ class SignupActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this@SignupActivity, "개인정보 동의버튼을 눌러주세요.", Toast.LENGTH_SHORT)
                     .show()
-            }
+            }*/
             }
 
         }
     }
+}
 
 
 

@@ -1,6 +1,7 @@
 package com.example.signz_android.Mypage
 
 import android.content.Intent
+import android.graphics.Paint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,7 +24,7 @@ class WMyPageFragment : Fragment() {
         binding.imgMypageSetting.setOnClickListener {
             startActivity(Intent(activity, SettingsActivity::class.java))
         }
-
+        binding.tvMypageModify.paintFlags = Paint.UNDERLINE_TEXT_FLAG
         binding.tvMypageModify.setOnClickListener {
             startActivity(Intent(activity, ModifyInfoActivity::class.java))
         }
@@ -33,7 +34,8 @@ class WMyPageFragment : Fragment() {
         }
 
         binding.imgMypageJobinfo.setOnClickListener {
-            (activity as WMainActivity).changeFragment(2)
+            startActivity(Intent(activity, WMypageManageActivity::class.java))
+           // (activity as WMainActivity).changeFragment(2)
         }
 
         binding.imgMypageMoney.setOnClickListener {

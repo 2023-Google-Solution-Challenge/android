@@ -8,7 +8,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class OMypageContractActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMypageOContractBinding
-    private val tabTitleArray = arrayOf("진행중", "계약완료")
+    private val tabTitleArray = arrayOf("Ongoing", "Completion")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

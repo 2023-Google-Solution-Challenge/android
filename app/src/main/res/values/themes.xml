@@ -24,4 +24,12 @@
         <!-- 취소/확인버튼 색상 -->
         <item name="android:textColor">@color/main</item>
     </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+    <item name="background">@android:color/transparent</item>
+    </style>
 </resources>
