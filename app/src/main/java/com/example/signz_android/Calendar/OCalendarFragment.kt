@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.signz_android.Mypage.OMypageManageActivity
 import com.example.signz_android.databinding.FragmentOCalendarBinding
 
 class OCalendarFragment : Fragment() {
@@ -19,7 +20,7 @@ class OCalendarFragment : Fragment() {
         binding = FragmentOCalendarBinding.inflate(inflater, container, false)
 
         binding.btnOcalendarManage.setOnClickListener {
-
+            startActivity(Intent(context, OMypageManageActivity::class.java))
         }
         binding.btnOcalendarPaymanage.setOnClickListener{
             startActivity(Intent(context, PayActivity::class.java))

@@ -49,7 +49,6 @@
         app:layout_constraintTop_toBottomOf="@id/tab_community_con"/>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_marginHorizontal="24dp"
         android:id="@+id/viewpager_community_con"
         android:layout_width="match_parent"
         android:layout_height="0dp"
