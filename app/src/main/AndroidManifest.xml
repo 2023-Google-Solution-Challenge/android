@@ -78,7 +78,7 @@
         <activity android:name=".Mypage.MypageYoutubeViewActivity"/>
         <activity android:name=".Mypage.OMypageContractActivity"/>
         <activity android:name=".Mypage.WMypageContractActivity"/>
-        
+
         <activity android:name=".Mypage.WMypageWorkHistoryActivity"/>
         <activity android:name=".Mypage.WMypageAddWorkHistoryActivity"/>
         <activity android:name=".Mypage.DeleteAccountActivity"/>
