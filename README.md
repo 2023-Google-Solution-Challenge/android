@@ -29,9 +29,10 @@ Technology Stack💻
 
 
 
+
 Overview
 ---
-### Background and Objectives
+### Background and Goals
 Labor is an act that inevitably accompanies human life. Compared to rapid economic growth, workers' working conditions have not improved noticeably. In the working environment, individual values were decreasing, and they were often not properly respected. Among them, the labor vulnerable groups are prone to discrimination in the labor market and are not guaranteed legitimate rights. Even in the current job market, they are marginalized. In order to promote steady economic growth in the future, securing workers' rights must be a priority.
 
 We divided the problems of the working environment into four categories and focused on the conflicts and solutions that may arise between employers and workers.
@@ -67,6 +68,7 @@ You can also identify the "reliability" score in your application to see how rel
 
 
 
+
 Functions
 ---
 
@@ -97,6 +99,8 @@ You can check the reliability score which takes into account factors such as wag
 
 ### Employee
 #### Main
+<img src="https://user-images.githubusercontent.com/100350128/228934917-d1f8d7a3-403a-4f72-9db6-69b97b24a0ce.png" alt="Posts" width="200" height="433.07">
+
 
 We provide employment information based on location and specific workplace details, including required information, through job postings and workplace ratings.
 You can report inappropriate workplaces, and we offer assistance to workers in the process.
@@ -118,7 +122,6 @@ We offer educational videos on workers' rights, safety, disability, and sexual h
 You can check the reliability score, which reflects attendance, early resignation, and employer evaluation.
 
 
-
 Signz Features
 ---
 While there are existing job search platforms that connect employers and workers, there is a lack of applications specifically targeting vulnerable labor groups. Signz, however, goes beyond basic job hunting functions and aims to provide workers with reasonable treatment in the appropriate working environment. This includes features such as labor contract management, commute tracking, rest time guarantees, and vacation planning. Additionally, Signz offers guidance on how to deal with workplace unfairness, ensuring that workers' rights are secured.
@@ -126,6 +129,9 @@ While there are existing job search platforms that connect employers and workers
 To address the lack of labor education, Signz provides educational videos on topics such as workers' human rights, safety, disability, and sexual harassment. Users can earn badges based on their viewing activity, which contribute to their reliability score. Unlike other platforms that typically only evaluate workers, Sainz includes employer evaluations in the reliability score, leading to the formation of high-quality labor jobs based on mutual trust between both parties.
 
 Finally, recognizing the lack of community support for business owners, Signz operates separately from the worker and employer communities.
+
+
+
 
 Expected effects
 ---
