@@ -30,7 +30,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        
         <activity
             android:name=".Usersign.LoginActivity"
             android:exported="true">
@@ -43,14 +42,16 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        
         <activity
             android:name=".WMain.WMainActivity"
             android:exported="true">
         </activity>
         <activity android:name=".Usersign.FindAccountActivity" />
+
         <activity android:name=".Community.CommunityBoardWriteActivity" />
         <activity android:name=".Community.CommunityBoardViewActivity" />
+        <activity android:name=".Community.GuideDetailActivity"/>
+
         <activity android:name=".WMain.WApplyActivity"/>
         <activity android:name=".WMain.WRecruitActivity"/>
         <activity android:name=".WMain.WQuitActivity"/>
@@ -59,8 +60,6 @@
         <activity android:name=".Calendar.PayActivity"/>
         <activity android:name=".Calendar.PayAddBankActivity"/>
         <activity android:name=".Calendar.CalendarNoticeActivity"/>
-
-        <activity android:name=".Community.GuideDetailActivity"/>
 
 
         <activity android:name=".OMain.OMainActivity"/>
@@ -77,15 +76,16 @@
         <activity android:name=".Mypage.MypageBadge3Activity"/>
         <activity android:name=".Mypage.MypageBadge4Activity"/>
         <activity android:name=".Mypage.MypageYoutubeViewActivity"/>
-        <activity android:name=".Mypage.OMypageContractActivity"/>
         <activity android:name=".Mypage.WMypageContractActivity"/>
-
+        <activity android:name=".Mypage.WMypageManageActivity"/>
+        <activity android:name=".Mypage.OMypageContractActivity"/>
+        <activity android:name=".Mypage.OMypageManageActivity"/>
         <activity android:name=".Mypage.WMypageWorkHistoryActivity"/>
         <activity android:name=".Mypage.WMypageAddWorkHistoryActivity"/>
         <activity android:name=".Mypage.DeleteAccountActivity"/>
         <activity android:name=".Mypage.ChangePasswordActivity"/>
-        <activity android:name=".Mypage.ModifyInfoActivity"/>
         <activity android:name=".Mypage.ChangePhoneNumActivity"/>
+        <activity android:name=".Mypage.ModifyInfoActivity"/>
     </application>
 
 </manifest>
