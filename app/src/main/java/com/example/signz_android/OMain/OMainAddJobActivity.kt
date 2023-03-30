@@ -2,6 +2,7 @@ package com.example.signz_android.OMain
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.signz_android.JobpostData
@@ -71,14 +72,26 @@ class OMainAddJobActivity : AppCompatActivity() {
             binding.btnHoliPayN.isSelected = true
         }
 
+        fun setUseableEditText(et: EditText, useable: Boolean) {
+            et.isClickable = useable
+            et.isEnabled = useable
+            et.isFocusable = useable
+            et.isFocusableInTouchMode = useable
+        }
+        setUseableEditText(binding.etProbationDay, false)
         binding.btnProbationY.setOnClickListener {
             binding.btnProbationY.isSelected = true
             binding.btnProbationN.isSelected = false
+            setUseableEditText(binding.etProbationDay, true)
         }
 
         binding.btnProbationN.setOnClickListener {
             binding.btnProbationY.isSelected = false
             binding.btnProbationN.isSelected = true
+            setUseableEditText(binding.etProbationDay, false)
+        }
+
+        if (binding.btnProbationN.isSelected){
             binding.etProbationDay.isEnabled = false
         }
 
