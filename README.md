@@ -28,6 +28,7 @@ Technology Stack💻
 - Google Maps API
 
 
+
 Overview
 ---
 ### Background and Objectives
@@ -65,7 +66,8 @@ For example, before starting work, both employees and employers are required to 
 You can also identify the "reliability" score in your application to see how reliable your partner is. This will enable employers to build good working areas and gain a reputation. In addition, employees will be able to get jobs in a better environment. Our goal is to achieve the highest reliability score for all users. As a result, quality jobs are created that everyone can trust and trust, which also leads to economic growth.
 
 
-Features
+
+Functions
 ---
 
 ### Employer
@@ -116,7 +118,8 @@ We offer educational videos on workers' rights, safety, disability, and sexual h
 You can check the reliability score, which reflects attendance, early resignation, and employer evaluation.
 
 
-Signz
+
+Signz Features
 ---
 While there are existing job search platforms that connect employers and workers, there is a lack of applications specifically targeting vulnerable labor groups. Signz, however, goes beyond basic job hunting functions and aims to provide workers with reasonable treatment in the appropriate working environment. This includes features such as labor contract management, commute tracking, rest time guarantees, and vacation planning. Additionally, Signz offers guidance on how to deal with workplace unfairness, ensuring that workers' rights are secured.
 
