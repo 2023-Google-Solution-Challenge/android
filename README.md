@@ -96,7 +96,7 @@ You can view the attendance of workers at a glance on a calendar.
 The salary management page allows for checking workers' wage details and accounts, as well as completing deposits.
 You can use the application to approve vacation requests and receive continuous notifications to stay updated on their status.
 
->#### Community:
+>#### Community
 <div display:"flex">
   <img src="https://user-images.githubusercontent.com/73579002/229064799-28c909ec-47a9-4613-bc60-b25626639d59.png" alt="Posts" width="200" height="433.07">
   <img src="https://user-images.githubusercontent.com/73579002/229064815-0f634e60-6c51-4de4-9ef3-f7c4a32754fa.png" alt="Posts" width="200" height="433.07">
