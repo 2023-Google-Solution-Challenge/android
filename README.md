@@ -73,26 +73,47 @@ Functions
 ---
 
 ### Employer
-#### Main
-
+>#### Main
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229065791-858c9ba1-14ef-4411-b3d8-b4013f1e5039.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229062580-15f3bf5c-cf84-4e50-a855-8296f35b8db6.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229062590-87ff210d-a83f-4a27-a369-c5772a72e4df.png" alt="Posts" width="200" height="433.07">
+</div>
+ 
 You can create a job posting.
 Applicants can be identified, also their reliability, badges, and work history can be identified.
 Recruiting is conducted within the application, and a labor contract is prepared.
 You can add and delete workplaces.
 
-#### Calendar
+>#### Calendar
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229065338-cd3f6ac2-3cb7-4ab7-826a-2a817dcf6cd9.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229062995-a0966aab-dbd4-465e-af46-bc83087fd772.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229063000-7a358729-97ad-4bab-b68a-8fc71d4905e2.png" alt="Posts" width="200" height="433.07">
+</div>
 
 You can view the attendance of workers at a glance on a calendar.
 The salary management page allows for checking workers' wage details and accounts, as well as completing deposits.
 You can use the application to approve vacation requests and receive continuous notifications to stay updated on their status.
 
-#### Community:
+>#### Community:
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229064799-28c909ec-47a9-4613-bc60-b25626639d59.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064815-0f634e60-6c51-4de4-9ef3-f7c4a32754fa.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064821-7e700265-adbf-48be-a231-08cf3d096c28.png" alt="Posts" width="200" height="433.07">
+ </div>
 
 There is a community for employers, so they can freely share their opinions with others, and through this, they can seek advice on various problems.
 The application includes essential guides for navigating the working environment, providing access to a wealth of useful information.
 
-#### MyPage
-
+>#### MyPage
+<div display:"flex">
+  <img src="https://user-images.githubusercontent.com/73579002/229064401-a2a90e49-9288-46ff-8bdf-adbf9ffdfc2c.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064408-1467a254-0122-4cb8-a5b9-7a79d42db245.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064417-e9485724-c648-4243-ab57-470f34416ded.png" alt="Posts" width="200" height="433.07">
+  <img src="https://user-images.githubusercontent.com/73579002/229064422-bcd0d383-5f20-4b74-8f39-793d736412f3.png" alt="Posts" width="200" height="433.07">
+ </div>
+ 
 It provides contract, worker management and salary management functions.
 The application promotes labor awareness by offering educational videos on topics such as worker’s rights, safety, gender education, and awareness. Furthermore, a badge can be awarded based on the user's viewing history to enhance their reliability score.
 You can check the reliability score which takes into account factors such as wage arrears, unfair dismissal, and employee evaluation, can be easily checked.
