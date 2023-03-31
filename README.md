@@ -206,9 +206,9 @@ Contributor
 ---
 <table>
   <tr>
-    <td align="center"><sub><b>ANDROID</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Yoo sohee</b></sub><br /></td>
-    <td align="center"><sub><b>ANDROID</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Kim chaeli</b></sub><br /></td>
-    <td align="center"><sub><b>Backend</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Lee hyunjin</b></sub><br /></td>
-    <td align="center"><sub><b>Backend</b></sub><br /><img src="" width="100px;" alt=""/><br /><sub><b>Sin Yeonjung</b></sub><br /></td>
+    <td align="center"><sub><b>ANDROID</b></sub><br /><img src="https://user-images.githubusercontent.com/100350128/229155381-37033171-8248-46c9-b0b3-428a85bf04d1.png" width="100px;" alt=""/><br /><sub><b>Yoo sohee</b></sub><br /></td>
+    <td align="center"><sub><b>ANDROID</b></sub><br /><img src="https://user-images.githubusercontent.com/100350128/229155435-d6aef346-bf0d-4b4f-861d-b944db8778af.png" width="100px;" alt=""/><br /><sub><b>Kim chaeli</b></sub><br /></td>
+    <td align="center"><sub><b>Backend</b></sub><br /><img src="https://user-images.githubusercontent.com/100350128/229155409-dd6c0ae5-d658-4db5-bde2-e70504fad96d.png" width="100px;" alt=""/><br /><sub><b>Lee hyunjin</b></sub><br /></td>
+    <td align="center"><sub><b>Backend</b></sub><br /><img src="https://user-images.githubusercontent.com/100350128/229155396-ea6d496a-cb9a-4ef1-90ca-c3ccf9f9e295.png" width="100px;" alt=""/><br /><sub><b>Sin Yeonjeong</b></sub><br /></td>
     </tr>
 </table>
